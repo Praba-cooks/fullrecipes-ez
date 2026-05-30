@@ -8,6 +8,7 @@
 </head>
 <body>
 
+    <!-- Simple, Clear Top Header -->
     <header>
         <div class="header-container">
             <h1>Dr. Prabakaran Kamalanathan</h1>
@@ -18,19 +19,29 @@
         </div>
     </header>
 
+    <!-- Large, Easy-to-Click Category Panels -->
     <div class="navigation-panel">
-        <p class="nav-instruction">👇 Click a button below to choose a recipe (உங்களுக்கு வேண்டிய உணவைத் தேர்ந்தெடுக்கவும் / अपनी पसंद का नुस्खा चुनें):</p>
+        <p class="nav-instruction">👇 Click a category below to see the recipes (உங்களுக்கு வேண்டிய வகையைத் தேர்ந்தெடுக்கவும் / अपनी पसंद का वर्ग चुनें):</p>
+        
         <div class="filter-tabs">
-            <button class="tab-btn active" data-filter="all">Show All (எல்லாம் / सब दिखाएं)</button>
-            <button class="tab-btn" data-filter="buttermilk">Buttermilk (மோர் வகை / छाछ)</button>
-            <button class="tab-btn" data-filter="dessert">Dessert (இனிப்பு வகை / मिठाई)</button>
+            <button class="tab-btn active" data-filter="buttermilk">
+                <span class="btn-main">🥛 BUTTERMILK CATEGORY</span>
+                <span class="btn-sub">(மோர் வகைகள் / छाछ के प्रकार)</span>
+            </button>
+            
+            <button class="tab-btn" data-filter="dessert">
+                <span class="btn-main">🍯 DESSERT CATEGORY</span>
+                <span class="btn-sub">(இனிப்பு வகைகள் / मिठाई के प्रकार)</span>
+            </button>
         </div>
     </div>
 
+    <!-- Main Content Box -->
     <main>
 
+        <!-- CATEGORY: BUTTERMILK -->
         <article class="recipe-card" data-category="buttermilk">
-            <h2 class="recipe-title">1. Pudina Buttermilk <br><span class="translation-title">(புதினா மோர் / पुदीना छाछ)</span></h2>
+            <h2 class="recipe-title">Pudina Buttermilk <br><span class="translation-title">(புதினா மோர் / पुदीना छाछ)</span></h2>
             <p class="recipe-description">This is a wonderful, traditional drink to cool down your body, help with digestion, and keep you feeling energetic all day long.</p>
 
             <div class="metrics-dashboard">
@@ -87,9 +98,9 @@
             </div>
         </article>
 
-
-        <article class="recipe-card" data-category="dessert">
-            <h2 class="recipe-title">2. Tamil Nadu Style Rava Laddu <br><span class="translation-title">(நெய் ரவா லாடு / सूजी के लड्डू)</span></h2>
+        <!-- CATEGORY: DESSERT -->
+        <article class="recipe-card" data-category="dessert" style="display: none; opacity: 0;">
+            <h2 class="recipe-title">Tamil Nadu Style Rava Laddu <br><span class="translation-title">(நெய் ரவா லாடு / सूजी के लड्डू)</span></h2>
             <p class="recipe-description">A beautiful, sweet festive treat made with roasted semolina, aromatic ghee, and crunchy cashews rolled into soft delicious sweet balls.</p>
 
             <div class="metrics-dashboard">
