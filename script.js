@@ -6,22 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // 1. Remove active color state from all buttons
+            // 1. Clear active design states from all buttons
             tabButtons.forEach(btn => btn.classList.remove('active'));
             
-            // 2. Add high-contrast active color to the clicked button
+            // 2. Set the newly selected button to high-contrast blue state
             button.classList.add('active');
 
-            // 3. Find out which category they want to view
+            // 3. Match the data-filter label code
             const targetCategory = button.getAttribute('data-filter');
 
-            // 4. Show or Hide recipe blocks smoothly
+            // 4. Update display visibility states immediately
             recipeCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category');
 
-                if (targetCategory === 'all' || cardCategory === targetCategory) {
+                if (cardCategory === targetCategory) {
                     card.style.display = "block";
-                    card.style.opacity = "1";
+                    // Brief delay ensures smooth fade appearance 
+                    setTimeout(() => card.style.opacity = "1", 10);
                 } else {
                     card.style.display = "none";
                     card.style.opacity = "0";
