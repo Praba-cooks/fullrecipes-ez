@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- Simple, Clear Top Header -->
     <header>
         <div class="header-container">
             <h1>Dr. Prabakaran Kamalanathan</h1>
@@ -19,16 +18,21 @@
         </div>
     </header>
 
-    <!-- Main Content Box -->
+    <div class="navigation-panel">
+        <p class="nav-instruction">👇 Click a button below to choose a recipe (உங்களுக்கு வேண்டிய உணவைத் தேர்ந்தெடுக்கவும் / अपनी पसंद का नुस्खा चुनें):</p>
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">Show All (எல்லாம் / सब दिखाएं)</button>
+            <button class="tab-btn" data-filter="buttermilk">Buttermilk (மோர் வகை / छाछ)</button>
+            <button class="tab-btn" data-filter="dessert">Dessert (இனிப்பு வகை / मिठाई)</button>
+        </div>
+    </div>
+
     <main>
 
-        <!-- EASY RECIPE CARD: PUDINA BUTTERMILK -->
-        <article class="recipe-card">
-            
-            <h2 class="recipe-title">Pudina Buttermilk <br><span class="translation-title">(புதினா மோர் / पुदीना छाछ)</span></h2>
+        <article class="recipe-card" data-category="buttermilk">
+            <h2 class="recipe-title">1. Pudina Buttermilk <br><span class="translation-title">(புதினா மோர் / पुदीना छाछ)</span></h2>
             <p class="recipe-description">This is a wonderful, traditional drink to cool down your body, help with digestion, and keep you feeling energetic all day long.</p>
 
-            <!-- Big Simple Info Box -->
             <div class="metrics-dashboard">
                 <div class="metric-node">
                     <span class="label">Time to Make (நேரம் / समय)</span>
@@ -40,10 +44,7 @@
                 </div>
             </div>
 
-            <!-- Straightforward One-Column Layout for Easy Reading -->
             <div class="recipe-layout">
-                
-                <!-- Ingredients Section -->
                 <div class="recipe-section">
                     <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
                     <ul class="ingredient-list">
@@ -58,7 +59,6 @@
 
                 <hr class="section-divider">
 
-                <!-- Steps Section -->
                 <div class="recipe-section">
                     <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
                     <ol class="steps-list">
@@ -82,23 +82,81 @@
                             Add your ground mint paste, cumin powder, and salt. Mix everything together carefully.
                             <br><span class="lang-sub">(அரைத்த புதினா விழுது, சீரகத் தூள் மற்றும் தேவையான அளவு உப்பு சேர்த்து கலக்கவும். / अब इसमें पुदीना पेस्ट, जीरा पाउडर और नमक डालकर अच्छी तरह मिला लें।)</span>
                         </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="recipe-card" data-category="dessert">
+            <h2 class="recipe-title">2. Tamil Nadu Style Rava Laddu <br><span class="translation-title">(நெய் ரவா லாடு / सूजी के लड्डू)</span></h2>
+            <p class="recipe-description">A beautiful, sweet festive treat made with roasted semolina, aromatic ghee, and crunchy cashews rolled into soft delicious sweet balls.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">25 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Yields (அளவு / मात्रा)</span>
+                    <strong class="value">10-12 Laddus</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Fine Rava / Semolina (ரவை / सूजी)</li>
+                        <li>✔️ 3/4 Cup Powdered Sugar (சர்க்கரை பொடி / पिसी हुई चीनी)</li>
+                        <li>✔️ 1/4 Cup Pure Ghee (உருகிய நெய் / शुद्ध घी)</li>
+                        <li>✔️ 2-3 tablespoons Warm Milk (வெதுவெதுப்பான பால் / हल्का गर्म दूध)</li>
+                        <li>✔️ 10 Cashew nuts & Raisins (முந்திரி மற்றும் உலர் திராட்சை / काजू और किशमिश)</li>
+                        <li>✔️ 1/2 teaspoon Cardamom Powder (ஏலக்காய் தூள் / इलायची पाउडर)</li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Dry roast the Rava in a pan on low flame for 4 to 5 minutes until it smells nice. Keep it separate and let it cool. Do not burn it.
+                            <br><span class="lang-sub">(ரவையை ஒரு கடாயில் மிதமான தீயில் 4-5 நிமிடங்கள் வாசம் வரும் வரை வறுத்து தனியாக வைக்கவும். / सूजी को एक कड़ाही में धीमी आंच पर 4-5 मिनट के लिए खुशबू आने तक भूनें और अलग रख लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Heat ghee in a small pan, add broken cashews and raisins. Fry them until the cashews are golden brown and raisins puff up.
+                            <br><span class="lang-sub">(சிறிய கடாயில் நெய் ஊற்றி முந்திரி, திராட்சையை பொன்னிறமாக வறுத்து எடுத்துக்கொள்ளவும். / एक छोटी कड़ाही में घी गर्म करें, उसमें काजू और किशमिश को सुनहरा होने तक भून लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Put the cooled roasted rava and sugar into a mixer and grind it gently into a semi-fine powder. Add cardamom powder into this mix.
+                            <br><span class="lang-sub">(வறுத்த ரவை மற்றும் சர்க்கரையை மிக்ஸியில் போட்டு லேசாக அரைத்து, அதனுடன் ஏலக்காய் தூள் சேர்க்கவும். / ठंडी की हुई सूजी और चीनी को मिक्सी में डालकर हल्का पीस लें, फिर उसमें इलायची पाउडर मिलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Pour the warm ghee with the fried cashews and raisins directly into the rava powder. Mix it quickly using a spoon.
+                            <br><span class="lang-sub">(வறுத்த முந்திரி, திராட்சையுடன் இருக்கும் சூடான நெய்யை ரவை கலவையில் ஊற்றி கரண்டியால் நன்றாகக் கலக்கவும். / अब भुने हुए काजू, किशमिश और गर्म घी को सूजी के मिश्रण में डालकर चम्मच से अच्छे से मिलाएं।)</span>
+                        </li>
                         <li>
                             <strong>Step 5 (ஐந்தாம் படி / पांचवां कदम):</strong> <br>
-                            Pour it into big glasses, sit back, and enjoy your healthy drink!
-                            <br><span class="lang-sub">(சுவையான புதினா மோர் தயார், பருகி மகிழுங்கள்! / आपकी ठंडी और ताज़ा पुदीना छाछ तैयार है, इसका आनंद लें!)</span>
+                            Sprinkle warm milk little by little. Take a small portion of the warm mixture in your hands and press firmly to roll it into neat round balls. Let them sit to dry and become solid.
+                            <br><span class="lang-sub">(வெதுவெதுப்பான பாலை லேசாகத் தெளித்து, கலவை சூடாக இருக்கும்போதே கைகளில் பிடித்து உருண்டைகளாக உருட்டவும். / अब थोड़ा सा गर्म दूध छिड़कें और मिश्रण के गर्म रहते ही हाथों से दबाकर गोल-गोल लड्डू बना लें।)</span>
                         </li>
                     </ol>
                 </div>
-
             </div>
         </article>
 
     </main>
 
-    <!-- Clear, Comforting Footer -->
     <footer>
         <p>Blessings from Dr. Prabakaran Kamalanathan's Kitchen. Stay Healthy! ❤️</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
