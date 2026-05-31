@@ -1,291 +1,257 @@
-/* --- Senior-Friendly, High-Readability Style Sheet --- */
+/* --- Academic Portfolio Structural Architecture Styling --- */
 
 :root {
-    --bg-page: #fdfbf7;          /* Soft Cream White (prevents glare/eye strain) */
-    --card-bg: #ffffff;          /* Crisp Clean Paper White */
-    --text-dark: #1e293b;        /* Deep Off-Black for absolute maximum clarity */
-    --text-muted: #475569;       /* Dark slate gray for sub-titles */
-    --accent-warm: #b45309;      /* Traditional warm amber accent tone */
-    --border-light: #e2e8f0;     /* Soft dividing lines */
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    --neutral-light: #f8fafc;
+    --card-surface: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-soft: #e2e8f0;
+    --border-focus: #94a3b8;
+    
+    /* Category Color Identifiers */
+    --buttermilk-accent: #0284c7;
+    --dessert-accent: #ea580c;
+    --rice-accent: #ca8a04;
+    --biryani-accent: #dc2626; /* Crimson Red Signature */
 }
 
 body {
-    font-family: 'Georgia', 'Times New Roman', serif; /* Easy for aging eyes to read */
-    background-color: var(--bg-page);
-    color: var(--text-dark);
-    line-height: 1.7;            /* Generous spacing between lines */
-    font-size: 1.25rem;          /* Large base font size */
-    padding-bottom: 2rem;
+    background-color: var(--neutral-light);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 
-/* Simple Readable Header Layout */
-header {
-    background-color: #1e3a8a;   /* Rich Royal Blue */
-    color: white;
-    padding: 3rem 1.5rem;
-    text-align: center;
-    border-bottom: 5px solid var(--accent-warm);
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+/* Accent Line decoration */
+.top-accent-line {
+    height: 4px;
+    background: #1e293b;
+}
+
+/* Header Grid Components */
+.portfolio-header {
+    background: #fff;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 3rem 0;
+}
+
+.institution-meta {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.portfolio-header h1 {
+    font-size: 2.25rem;
+    margin: 0.25rem 0;
+    color: var(--text-primary);
+}
+
+.academic-title {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.profile-summary p {
+    max-width: 800px;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Control Hub Element styling */
+.control-hub {
+    margin: 2rem 0;
+}
+
+.search-wrapper {
+    margin-bottom: 1.25rem;
+}
+
+.clean-search-bar {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+    background: #fff;
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.clean-search-bar:focus {
+    border-color: var(--border-focus);
+}
+
+.filter-navigation {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-filter-btn {
+    background: #fff;
+    border: 1px solid var(--border-soft);
+    color: var(--text-secondary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-filter-btn:hover {
+    border-color: var(--border-focus);
+    color: var(--text-primary);
+}
+
+.nav-filter-btn.active {
+    background: var(--text-primary);
+    color: #fff;
+    border-color: var(--text-primary);
+}
+
+/* Card Presentation Grid Engine */
+.grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.clean-recipe-card {
+    background: var(--card-surface);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card-header-block {
+    margin-bottom: 1.25rem;
+}
+
+.category-indicator {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
     margin-bottom: 0.5rem;
 }
 
-header p.subtitle {
-    font-size: 1.3rem;
-    color: #fef08a;              /* Soft yellow text highlight */
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+.type-buttermilk { color: var(--buttermilk-accent); }
+.type-dessert { color: var(--dessert-accent); }
+.type-rice { color: var(--rice-accent); }
+.type-biryani { color: var(--biryani-accent); }
+
+.card-recipe-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--text-primary);
 }
 
-.bio-container {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
+.card-brief {
+    color: var(--text-secondary);
+    margin: 0.5rem 0 0 0;
+    font-size: 0.95rem;
 }
 
-/* --- Navigation & Search Panel for Elders --- */
-.navigation-panel {
-    max-width: 800px;
-    margin: 2.5rem auto 1rem auto;
-    padding: 0 1rem;
-    text-align: center;
-}
-
-/* Giant Accessible Search Box Component */
-.search-box-container {
-    background-color: #f1f5f9;
-    border: 3px dashed #cbd5e1;
-    padding: 1.5rem;
-    border-radius: 14px;
-    margin-bottom: 2rem;
-    text-align: left;
-}
-
-.search-label {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #1e3a8a;
-    margin-bottom: 0.75rem;
-}
-
-.elder-search-bar {
-    width: 100%;
-    font-family: inherit;
-    font-size: 1.3rem;
-    padding: 1rem 1.25rem;
-    border: 3px solid #94a3b8;
-    border-radius: 8px;
-    outline: none;
-    color: var(--text-dark);
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.elder-search-bar:focus {
-    border-color: #1d4ed8;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(29, 78, 216, 0.15);
-}
-
-.nav-instruction {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--accent-warm);
-    margin-bottom: 1.5rem;
-}
-
-.filter-tabs {
+/* Spec Row Layout */
+.quick-specs-row {
     display: flex;
-    flex-direction: column;      /* Stacks buttons cleanly on top of each other */
-    gap: 1.25rem;                /* Safe gap to prevent accidental double clicks */
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.tab-btn {
-    font-family: inherit;
-    padding: 1.5rem 2rem;        /* Giant clickable space */
-    background-color: #ffffff;
-    border: 4px solid #94a3b8;   /* Bold, clear border */
-    color: #1e293b;
-    border-radius: 14px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-}
-
-.tab-btn .btn-main {
-    display: block;
-    font-size: 1.5rem;           /* Highly legible English text */
-    font-weight: 900;
-    letter-spacing: 0.5px;
-}
-
-.tab-btn .btn-sub {
-    display: block;
-    font-size: 1.2rem;           /* Clear structural size for translation text */
-    color: #475569;
-    margin-top: 0.25rem;
-    font-weight: bold;
-}
-
-/* Hover Action state */
-.tab-btn:hover {
-    background-color: #f8fafc;
-    border-color: #475569;
-}
-
-/* Active Pressed Button State */
-.tab-btn.active {
-    background-color: #1e3a8a;   /* Flips to Royal Blue when active */
-    color: #ffffff;
-    border-color: #1d4ed8;
-    box-shadow: 0 8px 16px rgba(30, 58, 138, 0.4);
-    transform: translateY(-2px);
-}
-
-.tab-btn.active .btn-sub {
-    color: #fef08a;              /* Changes translation color to soft yellow on active button */
-}
-
-/* Centralized Easy-Reading Card Container */
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-.recipe-card {
-    background-color: var(--card-bg);
-    border: 2px solid #cbd5e1;
-    border-radius: 12px;
-    padding: 2.5rem 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin-bottom: 3rem;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.recipe-title {
-    font-size: 2.2rem;
-    color: #1e3a8a;
-    font-weight: bold;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-}
-
-.translation-title {
-    font-size: 1.5rem;
-    color: var(--accent-warm);
-}
-
-.recipe-description {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-}
-
-/* Big Text Info Dashboards */
-.metrics-dashboard {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    background-color: #f8fafc;
-    border: 2px solid #cbd5e1;
-    padding: 1.2rem;
-    border-radius: 8px;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-
-.metric-node .label {
-    display: block;
-    font-size: 1.05rem;
-    color: var(--text-muted);
-    margin-bottom: 0.2rem;
-}
-
-.metric-node .value {
-    font-size: 1.4rem;
-    color: #1e3a8a;
-    font-weight: bold;
-}
-
-/* Step-by-Step Sections */
-.recipe-section h3 {
-    font-size: 1.5rem;
-    color: #1e3a8a;
+    gap: 1.5rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--neutral-light);
+    border-bottom: 1px solid var(--neutral-light);
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--border-light);
-    padding-bottom: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
 }
 
-.ingredient-list {
+/* Interior Grid Data Display Splitting */
+.card-details-split {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .card-details-split { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.details-pane h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--neutral-light);
+    padding-bottom: 0.25rem;
+}
+
+/* Checklist custom alignment features */
+.clean-checklist {
     list-style: none;
-    margin-bottom: 2rem;
+    padding: 0;
+    margin: 0;
 }
 
-.ingredient-list li {
-    font-size: 1.3rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px dashed var(--border-light);
+.list-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
 }
 
-.section-divider {
-    border: 0;
-    height: 1px;
-    background: var(--border-light);
-    margin: 2.5rem 0;
+.list-row input[type="checkbox"] {
+    margin-top: 0.25rem;
+    cursor: pointer;
 }
 
-.steps-list {
-    list-style: none;
+.list-row.line-through-fade label {
+    text-decoration: line-through;
+    color: var(--text-secondary);
+    opacity: 0.6;
 }
 
-.steps-list li {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    background-color: #fdfbf7;
-    padding: 1.2rem;
-    border-left: 5px solid var(--accent-warm);
-    border-radius: 4px;
+/* Clean Formatted Process Flow Lists */
+.ordered-steps {
+    padding-left: 1.2rem;
+    margin: 0;
 }
 
-/* Regional language text line rules */
-.lang-sub {
-    display: block;
-    font-size: 1.15rem;
-    color: #0369a1;              /* Gentle contrast line blue */
-    margin-top: 0.5rem;
-    font-family: system-ui, -apple-system, sans-serif;
+.ordered-steps li {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    padding-left: 0.25rem;
 }
 
-/* Gentle Footer */
-footer {
+/* Footer elements formatting */
+.portfolio-footer {
     text-align: center;
-    padding: 3rem 1rem;
-    background-color: #1e293b;
-    color: #94a3b8;
-    font-size: 1.1rem;
+    padding: 3rem 0;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border-soft);
     margin-top: 4rem;
-}
-
-/* Mobile Adjustments */
-@media (max-width: 600px) {
-    body { font-size: 1.15rem; }
-    header h1 { font-size: 2rem; }
-    .recipe-card { padding: 1.5rem 1rem; }
-    .recipe-title { font-size: 1.7rem; }
-    .metrics-dashboard { grid-template-columns: 1fr; gap: 1rem; }
-    .tab-btn .btn-main { font-size: 1.2rem; }
-    .tab-btn .btn-sub { font-size: 1rem; }
+    background: #fff;
 }
