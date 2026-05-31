@@ -8,10 +8,7 @@
 </head>
 <body>
 
-    <!-- Minimalist Top Accent Bar -->
-    <div class="top-accent-line"></div>
-
-    <!-- Academic Profile Header Section -->
+    <!-- Project Care: Soft Traditional Header -->
     <header class="portfolio-header">
         <div class="container">
             <span class="institution-meta">Department of Food Science & Gastronomy</span>
@@ -23,14 +20,11 @@
         </div>
     </header>
 
-    <!-- Navigation Control Unit (Dynamic Search & Category Sorting) -->
+    <!-- Simple High-Visibility Filter Tabs (No Tricky Dropdowns) -->
     <section class="control-hub">
         <div class="container">
-            <div class="search-wrapper">
-                <input type="text" id="recipeSearch" class="clean-search-bar" placeholder="Search across ingredients, titles, or active protocols...">
-            </div>
             <div class="filter-navigation">
-                <button class="nav-filter-btn active" data-filter="all">All Recipes</button>
+                <button class="nav-filter-btn active" data-filter="all">Show All Recipes</button>
                 <button class="nav-filter-btn" data-filter="buttermilk">Buttermilk Series</button>
                 <button class="nav-filter-btn" data-filter="dessert">Traditional Desserts</button>
                 <button class="nav-filter-btn" data-filter="rice">Variety Rice Selection</button>
@@ -39,7 +33,7 @@
         </div>
     </section>
 
-    <!-- Master Recipe Matrix -->
+    <!-- Master Recipe Matrix (Static Single-Column Flow) -->
     <main class="recipe-container">
         <div class="container grid-layout" id="recipeGrid">
 
@@ -52,20 +46,35 @@
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 10 Mins</div>
-                    <div class="spec-cell"><strong>Temperature:</strong> Chilled</div>
-                    <div class="spec-cell"><strong>Yield:</strong> 2 Servings</div>
+                    <span><strong>Prep Time:</strong> 10 Mins</span>
+                    <span><strong>Temperature:</strong> Chilled</span>
+                    <span><strong>Yield:</strong> 2 Servings</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bml-1"><label for="bml-1">1 Cup Fresh Thicken Curd (Yogurt)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bml-2"><label for="bml-2">1.5 Cups Chilled Water</label></li>
-                            <li class="list-row"><input type="checkbox" id="bml-3"><label for="bml-3">15 Fresh Mint Leaves (Pudina)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bml-4"><label for="bml-4">1 Small Green Chili (De-seeded)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bml-5"><label for="bml-5">1/2 tsp Roasted Cumin Powder & Salt</label></li>
+                            <li class="list-row">
+                                <input type="checkbox" id="bml-1" class="accessible-checkbox">
+                                <label for="bml-1">1 Cup Fresh Thick Curd / Yogurt</label>
+                            </li>
+                            <li class="list-row">
+                                <input type="checkbox" id="bml-2" class="accessible-checkbox">
+                                <label for="bml-2">1.5 Cups Chilled Water</label>
+                            </li>
+                            <li class="list-row">
+                                <input type="checkbox" id="bml-3" class="accessible-checkbox">
+                                <label for="bml-3">15 Fresh Mint Leaves / Pudina</label>
+                            </li>
+                            <li class="list-row">
+                                <input type="checkbox" id="bml-4" class="accessible-checkbox">
+                                <label for="bml-4">1 Small Green Chili</label>
+                            </li>
+                            <li class="list-row">
+                                <input type="checkbox" id="bml-5" class="accessible-checkbox">
+                                <label for="bml-5">1/2 tsp Roasted Cumin Powder & Salt</label>
+                            </li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -88,21 +97,21 @@
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 25 Mins</div>
-                    <div class="spec-cell"><strong>Temperature:</strong> Medium Heat</div>
-                    <div class="spec-cell"><strong>Yield:</strong> 10-12 Laddus</div>
+                    <span><strong>Prep Time:</strong> 25 Mins</span>
+                    <span><strong>Temperature:</strong> Medium Heat</span>
+                    <span><strong>Yield:</strong> 10-12 Laddus</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="ldl-1"><label for="ldl-1">1 Cup Fine Semolina (Rava / Sooji)</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-2"><label for="ldl-2">3/4 Cup Powdered Sugar</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-3"><label for="ldl-3">1/4 Cup Pure Melted Ghee</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-4"><label for="ldl-4">2-3 tbsp Warm Milk (Binding fluid)</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-5"><label for="ldl-5">10 Cashew pieces & 1 tbsp Raisins</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-6"><label for="ldl-6">1/2 tsp Fresh Cardamom Powder</label></li>
+                            <li class="list-row"><input type="checkbox" id="ldl-1" class="accessible-checkbox"><label for="ldl-1">1 Cup Fine Semolina / Rava / Sooji</label></li>
+                            <li class="list-row"><input type="checkbox" id="ldl-2" class="accessible-checkbox"><label for="ldl-2">3/4 Cup Powdered Sugar</label></li>
+                            <li class="list-row"><input type="checkbox" id="ldl-3" class="accessible-checkbox"><label for="ldl-3">1/4 Cup Pure Melted Ghee</label></li>
+                            <li class="list-row"><input type="checkbox" id="ldl-4" class="accessible-checkbox"><label for="ldl-4">2-3 tbsp Warm Milk</label></li>
+                            <li class="list-row"><input type="checkbox" id="ldl-5" class="accessible-checkbox"><label for="ldl-5">10 Cashew pieces & 1 tbsp Raisins</label></li>
+                            <li class="list-row"><input type="checkbox" id="ldl-6" class="accessible-checkbox"><label for="ldl-6">1/2 tsp Fresh Cardamom Powder</label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -125,27 +134,27 @@
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 30 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Tangy & Savory</div>
-                    <div class="spec-cell"><strong>Grain State:</strong> Separated Grains</div>
+                    <span><strong>Prep Time:</strong> 30 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Tangy & Savory</span>
+                    <span><strong>Grain State:</strong> Separated Grains</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-tr-1"><label for="rice-tr-1">1 Cup Pre-cooked Basmati or Raw Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-2"><label for="rice-tr-2">3 Ripe Tomatoes (Finely chopped)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-3"><label for="rice-tr-3">1 Medium Onion (Slivered into strands)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-4"><label for="rice-tr-4">1 tbsp Pure Sesame (Gingelly) Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-5"><label for="rice-tr-5">Tempering: Mustard, Chana Dal, Turmeric, Chili Powder</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-tr-1" class="accessible-checkbox"><label for="rice-tr-1">1 Cup Pre-cooked Basmati or Raw Rice</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-tr-2" class="accessible-checkbox"><label for="rice-tr-2">3 Ripe Tomatoes (Finely chopped)</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-tr-3" class="accessible-checkbox"><label for="rice-tr-3">1 Medium Onion</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-tr-4" class="accessible-checkbox"><label for="rice-tr-4">1 tbsp Pure Sesame / Gingelly Oil</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-tr-5" class="accessible-checkbox"><label for="rice-tr-5">Tempering: Mustard, Chana Dal, Turmeric, Chili Powder</label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
                         <h3>Preparation Method</h3>
                         <ol class="ordered-steps">
                             <li>Splutter mustard seeds in hot sesame oil, then fry chana dal until golden.</li>
-                            <li>Sauté onions followed by chopped tomatoes until completely soft and oil begins to separate around the edges (Thokku consistency).</li>
+                            <li>Sauté onions followed by chopped tomatoes until completely soft and oil begins to separate around the edges.</li>
                             <li>Add the cooled pre-cooked rice to the pan and gently mix to uniform distribution without breaking the structural shape of the grains.</li>
                         </ol>
                     </div>
@@ -161,20 +170,20 @@
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 20 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Mild & Nutty</div>
-                    <div class="spec-cell"><strong>Grain State:</strong> Separated Grains</div>
+                    <span><strong>Prep Time:</strong> 20 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Mild & Nutty</span>
+                    <span><strong>Grain State:</strong> Separated Grains</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-cr-1"><label for="rice-cr-1">1 Cup Cooled Boiled Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-2"><label for="rice-cr-2">1/2 Cup Fresh Grated Coconut</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-3"><label for="rice-cr-3">1 tbsp Cold-Pressed Coconut Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-4"><label for="rice-cr-4">Sauté Mix: Urad Dal, Mustard, Cashews, Curry Leaves</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-5"><label for="rice-cr-5">2 Green Chilis & Ginger bits</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-cr-1" class="accessible-checkbox"><label for="rice-cr-1">1 Cup Cooled Boiled Rice</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-cr-2" class="accessible-checkbox"><label for="rice-cr-2">1/2 Cup Fresh Grated Coconut</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-cr-3" class="accessible-checkbox"><label for="rice-cr-3">1 tbsp Cold-Pressed Coconut Oil</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-cr-4" class="accessible-checkbox"><label for="rice-cr-4">Sauté Mix: Urad Dal, Mustard, Cashews, Curry Leaves</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-cr-5" class="accessible-checkbox"><label for="rice-cr-5">2 Green Chilis & Ginger bits</label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -197,20 +206,20 @@
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 40 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Bold & Tangy</div>
-                    <div class="spec-cell"><strong>Grain State:</strong> Separated Grains</div>
+                    <span><strong>Prep Time:</strong> 40 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Bold & Tangy</span>
+                    <span><strong>Grain State:</strong> Separated Grains</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-pr-1"><label for="rice-pr-1">1 Cup Steamed Rice (cooled completely)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-2"><label for="rice-pr-2">1 Lemon-sized ball of Tamarind (extracted in hot water)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-3"><label for="rice-pr-3">3 tbsp Pure Gingelly (Sesame) Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-4"><label for="rice-pr-4">Custom Powder: Roasted Fenugreek, Coriander, Red Chili</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-5"><label for="rice-pr-5">Crunch Base: Roasted Peanuts, Chana Dal, Mustard, Asafoetida</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-pr-1" class="accessible-checkbox"><label for="rice-pr-1">1 Cup Steamed Rice (cooled completely)</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-pr-2" class="accessible-checkbox"><label for="rice-pr-2">1 Lemon-sized ball of Tamarind (extracted in hot water)</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-pr-3" class="accessible-checkbox"><label for="rice-pr-3">3 tbsp Pure Gingelly / Sesame Oil</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-pr-4" class="accessible-checkbox"><label for="rice-pr-4">Custom Powder: Roasted Fenugreek, Coriander, Red Chili</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-pr-5" class="accessible-checkbox"><label for="rice-pr-5">Crunch Base: Roasted Peanuts, Chana Dal, Mustard, Asafoetida</label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -233,20 +242,20 @@
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 20 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Zesty & Vibrant</div>
-                    <div class="spec-cell"><strong>Grain State:</strong> Separated Grains</div>
+                    <span><strong>Prep Time:</strong> 20 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Zesty & Vibrant</span>
+                    <span><strong>Grain State:</strong> Separated Grains</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-lr-1"><label for="rice-lr-1">1 Cup Fluffy Boiled Rice (cooled completely)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-2"><label for="rice-lr-2">3 tbsp Fresh Squeezed Lemon Juice</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-3"><label for="rice-lr-3">1/2 tsp Turmeric Powder (Curcumin)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-4"><label for="rice-lr-4">1.5 tbsp Refined Cooking Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-5"><label for="rice-lr-5">Sauté Base: Mustard, Urad Dal, Roasted Peanuts, Green Chilis, Curry Leaves</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-lr-1" class="accessible-checkbox"><label for="rice-lr-1">1 Cup Fluffy Boiled Rice (cooled completely)</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-lr-2" class="accessible-checkbox"><label for="rice-lr-2">3 tbsp Fresh Squeezed Lemon Juice</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-lr-3" class="accessible-checkbox"><label for="rice-lr-3">1/2 tsp Turmeric Powder</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-lr-4" class="accessible-checkbox"><label for="rice-lr-4">1.5 tbsp Refined Cooking Oil</label></li>
+                            <li class="list-row"><input type="checkbox" id="rice-lr-5" class="accessible-checkbox"><label for="rice-lr-5">Sauté Base: Mustard, Urad Dal, Roasted Peanuts, Green Chilis, Curry Leaves</label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -264,25 +273,25 @@
             <article class="clean-recipe-card" data-category="biryani">
                 <div class="card-header-block">
                     <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Dindigul Seeraga Samba Mutton Biryani</h2>
+                    <h2 class="card-recipe-title">Dindigul Seeraga Samba Mutton Biryani <span class="bracket-lang">(திண்டுக்கல் சீரக சம்பா மட்டன் பிரியாணி) / (டிண்டிगुल सीरागा सांबा मटन बिरयानी)</span></h2>
                     <p class="card-brief">An authentic regional specialty using short, aromatic Seeraga Samba grains to maximize absorption of mutton fat, curd, and peppery spice notes.</p>
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 50 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Spicy & Peppery</div>
-                    <div class="spec-cell"><strong>Grain Base:</strong> Seeraga Samba Rice</div>
+                    <span><strong>Prep Time:</strong> 50 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Spicy & Peppery</span>
+                    <span><strong>Grain Base:</strong> Seeraga Samba Rice</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-db-1"><label for="bir-db-1">500g Fresh Mutton Pieces (with bone)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-2"><label for="bir-db-2">2 Cups Seeraga Samba Rice (washed & soaked)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-3"><label for="bir-db-3">100g Shallots (Small onions, crushed)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-4"><label for="bir-db-4">2 tbsp Ginger-Garlic Paste & 4 Green Chilis</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-5"><label for="bir-db-5">1/2 Cup Fresh Yogurt, Mint, Coriander, Pure Ghee</label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-db-1" class="accessible-checkbox"><label for="bir-db-1">500g Fresh Mutton Pieces <span class="bracket-lang">(மட்டன்) / (मटन)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-db-2" class="accessible-checkbox"><label for="bir-db-2">2 Cups Seeraga Samba Rice <span class="bracket-lang">(சீரக சம்பா அரிசி) / (सीरागा सांबा चावल)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-db-3" class="accessible-checkbox"><label for="bir-db-3">100g Small onions / Shallots <span class="bracket-lang">(சின்ன வெங்காயம்) / (छोटे प्याज)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-db-4" class="accessible-checkbox"><label for="bir-db-4">2 tbsp Ginger-Garlic Paste <span class="bracket-lang">(இஞ்சி பூண்டு விழுது) / (अदरक-लहसुन पेस्ट)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-db-5" class="accessible-checkbox"><label for="bir-db-5">1/2 Cup Yogurt, Mint & Ghee <span class="bracket-lang">(தயிர், புதினா, நெய்) / (दही, पुदीना, घी)</span></label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -300,25 +309,25 @@
             <article class="clean-recipe-card" data-category="biryani">
                 <div class="card-header-block">
                     <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Fine Kolkata Style Chicken Biryani</h2>
+                    <h2 class="card-recipe-title">Fine Kolkata Style Chicken Biryani <span class="bracket-lang">(கொல்கத்தா ஸ்டைல் சிக்கன் பிரியாணி) / (कोलकाता स्टाइल चिकन बिरयानी)</span></h2>
                     <p class="card-brief">A refined, royal preparation layered with par-boiled Basmati rice, soft spiced potatoes, and a delicate splash of rose, keora, and saffron-infused milk extracts.</p>
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 60 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Subtle & Fragrant</div>
-                    <div class="spec-cell"><strong>Grain Base:</strong> Long-Grain Basmati</div>
+                    <span><strong>Prep Time:</strong> 60 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Subtle & Fragrant</span>
+                    <span><strong>Grain Base:</strong> Long-Grain Basmati</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-kb-1"><label for="bir-kb-1">500g Chicken Pieces (Large Cuts)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-2"><label for="bir-kb-2">2 Large Potatoes (Peeled and halved)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-3"><label for="bir-kb-3">2 Cups Premium Aged Basmati Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-4"><label for="bir-kb-4">Aromatic Base: Saffron milk, Rose/Keora water, 2 drops Meetha Atar</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-5"><label for="bir-kb-5">Crisp Fried Onions (Beresta) & Garam Masala</label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-kb-1" class="accessible-checkbox"><label for="bir-kb-1">500g Chicken Pieces <span class="bracket-lang">(கோழி இறைச்சி) / (चिकन)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-kb-2" class="accessible-checkbox"><label for="bir-kb-2">2 Large Potatoes <span class="bracket-lang">(உருளைக்கிழங்கு) / (आलू)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-kb-3" class="accessible-checkbox"><label for="bir-kb-3">2 Cups Premium Aged Basmati Rice <span class="bracket-lang">(பாஸ்மதி அரிசி) / (बासमती चावल)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-kb-4" class="accessible-checkbox"><label for="bir-kb-4">Rose & Keora Water with Saffron <span class="bracket-lang">(ரோஸ் வாட்டர், குங்குமப்பூ) / (गुलाब जल, केसर)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-kb-5" class="accessible-checkbox"><label for="bir-kb-5">Fried Onions & Garam Masala <span class="bracket-lang">(வறுத்த வெங்காயம்) / (तली हुई प्याज)</span></label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -332,37 +341,37 @@
                 </div>
             </article>
 
-            <!-- CARD 9: AMBUR STYLE BIRYANI -->
+            <!-- CARD 9: AMBUR STYLE CHICKEN BIRYANI -->
             <article class="clean-recipe-card" data-category="biryani">
                 <div class="card-header-block">
                     <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Ambur Style Chicken Biryani</h2>
+                    <h2 class="card-recipe-title">Ambur Style Chicken Biryani <span class="bracket-lang">(ஆம்பூர் சிக்கன் பிரியாணி) / (आम्बूर चिकन बिरयानी)</span></h2>
                     <p class="card-brief">An iconic Arcot-style biryani prepared by cooking meat pieces in a smooth, vibrant red chili paste base, then combined with boiled Seeraga Samba rice.</p>
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 45 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Savory & Balanced</div>
-                    <div class="spec-cell"><strong>Grain Base:</strong> Seeraga Samba Rice</div>
+                    <span><strong>Prep Time:</strong> 45 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Savory & Balanced</span>
+                    <span><strong>Grain Base:</strong> Seeraga Samba Rice</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-ab-1"><label for="bir-ab-1">500g Chicken Pieces</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-2"><label for="bir-ab-2">2 Cups Seeraga Samba Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-3"><label for="bir-ab-3">4 tbsp Kashmiri Dry Red Chili Paste</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-4"><label for="bir-ab-4">2 tbsp Ginger-Garlic Paste, Sliced Onions, Tomatos</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-5"><label for="bir-ab-5">Fresh Mint, Coriander Leaves, Curd, Ghee, Refined Oil</label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-ab-1" class="accessible-checkbox"><label for="bir-ab-1">500g Chicken Pieces <span class="bracket-lang">(கோழி இறைச்சி) / (चिकन)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-ab-2" class="accessible-checkbox"><label for="bir-ab-2">2 Cups Seeraga Samba Rice <span class="bracket-lang">(சீரக சம்பா அரிசி) / (सीरागा सांबा चावल)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-ab-3" class="accessible-checkbox"><label for="bir-ab-3">4 tbsp Kashmiri Dry Red Chili Paste <span class="bracket-lang">(மிளகாய் விழுது) / (लाल मिर्च पेस्ट)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-ab-4" class="accessible-checkbox"><label for="bir-ab-4">Sliced Onions & Tomatoes <span class="bracket-lang">(வெங்காயம், தக்காளி) / (प्याज, टमाटर)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-ab-5" class="accessible-checkbox"><label for="bir-ab-5">Fresh Mint, Coriander & Curd <span class="bracket-lang">(புதினா, கொத்தமல்லி, தயிர்) / (पुदीना, धनिया, दही)</span></label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
                         <h3>Preparation Method</h3>
                         <ol class="ordered-steps">
-                            <li>Sauté onions, ginger-garlic paste, and tomatoes. Stir in the red chili paste and yogurt, then cook chicken pieces inside this base to form a gravy (Yakhni).</li>
+                            <li>Sauté onions, ginger-garlic paste, and tomatoes. Stir in the red chili paste and yogurt, then cook chicken pieces inside this base to form a gravy.</li>
                             <li>In a separate large pot, boil water and par-cook the Seeraga Samba grains until firm but pliable. Drain thoroughly.</li>
-                            <li>Incorporate the hot rice directly into the bubbling chicken gravy. Close tightly with a lid and steam on low charcoal heat indicators for 15 minutes.</li>
+                            <li>Incorporate the hot rice directly into the bubbling chicken gravy. Close tightly with a lid and steam on low heat settings for 15 minutes.</li>
                         </ol>
                     </div>
                 </div>
@@ -372,25 +381,25 @@
             <article class="clean-recipe-card" data-category="biryani">
                 <div class="card-header-block">
                     <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Hyderabadi Dum Mutton Biryani</h2>
+                    <h2 class="card-recipe-title">Hyderabadi Dum Mutton Biryani <span class="bracket-lang">(ஹைதராபாத் தம் மட்டன் பிரியாணி) / (हैदराबादी दम मटन बिरयानी)</span></h2>
                     <p class="card-brief">The classic Kacchi method where raw, enzyme-tenderized mutton is layered directly under partially boiled Basmati rice, then slow-steamed to perfection.</p>
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 75 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Rich, Robust & Spicy</div>
-                    <div class="spec-cell"><strong>Grain Base:</strong> Extra-Long Basmati</div>
+                    <span><strong>Prep Time:</strong> 75 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Rich, Robust & Spicy</span>
+                    <span><strong>Grain Base:</strong> Extra-Long Basmati</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-hb-1"><label for="bir-hb-1">600g Raw Tender Mutton Pieces</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-2"><label for="bir-hb-2">2.5 Cups Aged Basmati Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-3"><label for="bir-hb-3">1 tbsp Green Papaya Paste (Natural Tenderizer)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-4"><label for="bir-hb-4">Spices: Shahi Jeera, Cardamom, Mace, Mint, Thick Curd</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-5"><label for="bir-hb-5">Crispy Fried Onions, Saffron strands, Ghee, Wheat Flour Dough</label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-hb-1" class="accessible-checkbox"><label for="bir-hb-1">600g Raw Tender Mutton Pieces <span class="bracket-lang">(மட்டன் துண்டுகள்) / (कच्चे मटन के टुकड़े)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-hb-2" class="accessible-checkbox"><label for="bir-hb-2">2.5 Cups Aged Basmati Rice <span class="bracket-lang">(பாஸ்மதி அரிசி) / (बासमती चावल)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-hb-3" class="accessible-checkbox"><label for="bir-hb-3">1 tbsp Raw Papaya Paste <span class="bracket-lang">(பப்பாளி விழுது) / (कच्चे पपीते का पेस्ट)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-hb-4" class="accessible-checkbox"><label for="bir-hb-4">Shahi Jeera, Cardamom & Mint <span class="bracket-lang">(ஷாஜிஇரா, ஏலக்காய், புதினா) / (शाही जीरा, इलायची, पुदीना)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-hb-5" class="accessible-checkbox"><label for="bir-hb-5">Crispy Fried Onions & Ghee <span class="bracket-lang">(வறுத்த வெங்காயம், நெய்) / (तली हुई प्याज, घी)</span></label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -398,7 +407,7 @@
                         <ol class="ordered-steps">
                             <li>Marinate raw mutton with green papaya paste, yogurt, spices, and fried onions for 4 hours to break down protein bonds.</li>
                             <li>Boil Basmati rice and layer it over the raw meat base in stages: first layer at 50% cooked, middle layer at 70%, and top layer at 90%.</li>
-                            <li>Seal the lid onto the heavy pot using wheat dough to create a airtight seal. Cook on high heat for 15 minutes, then reduce to a low setting for 45 minutes.</li>
+                            <li>Seal the lid onto the heavy pot using wheat dough to create an airtight seal. Cook on high heat for 15 minutes, then reduce to a low setting for 45 minutes.</li>
                         </ol>
                     </div>
                 </div>
@@ -408,25 +417,25 @@
             <article class="clean-recipe-card" data-category="biryani">
                 <div class="card-header-block">
                     <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Thalassery Chicken Biryani</h2>
+                    <h2 class="card-recipe-title">Thalassery Chicken Biryani <span class="bracket-lang">(தலச்சேரி சிக்கன் பிரியாணி) / (थलस्सेरी चिकन बिरयानी)</span></h2>
                     <p class="card-brief">A legendary Malabar coast recipe using small, thin Khaima grains cooked entirely in ghee and paired with a fiery, green-chili-dominant chicken masala.</p>
                 </div>
                 
                 <div class="quick-specs-row">
-                    <div class="spec-cell"><strong>Prep Time:</strong> 55 Mins</div>
-                    <div class="spec-cell"><strong>Flavor Profile:</strong> Warm & Highly Aromatic</div>
-                    <div class="spec-cell"><strong>Grain Base:</strong> Khaima / Jeerakasala Rice</div>
+                    <span><strong>Prep Time:</strong> 55 Mins</span>
+                    <span><strong>Flavor Profile:</strong> Warm & Highly Aromatic</span>
+                    <span><strong>Grain Base:</strong> Khaima Rice</span>
                 </div>
 
                 <div class="card-details-split">
                     <div class="details-pane items-list">
                         <h3>Required Ingredients</h3>
                         <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-th-1"><label for="bir-th-1">500g Spring Chicken Pieces</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-2"><label for="bir-th-2">2 Cups Khaima / Jeerakasala Grains</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-3"><label for="bir-th-3">12 Green Chilis, Ginger, Garlic (Mashed together)</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-4"><label for="bir-th-4">Fried Cashew Nuts, Raisins, Sliced Onions</label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-5"><label for="bir-th-5">Pure Clarified Ghee & Malabar Biryani Masala Powder</label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-th-1" class="accessible-checkbox"><label for="bir-th-1">500g Spring Chicken Pieces <span class="bracket-lang">(கோழி இறைச்சி) / (चिकन)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-th-2" class="accessible-checkbox"><label for="bir-th-2">2 Cups Khaima / Jeerakasala Grains <span class="bracket-lang">(கைமா அரிசி) / (खैमा चावल)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-th-3" class="accessible-checkbox"><label for="bir-th-3">Mashed Green Chilis, Ginger, Garlic <span class="bracket-lang">(பச்சை மிளகாய் விழுது) / (हरी मिर्च का पेस्ट)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-th-4" class="accessible-checkbox"><label for="bir-th-4">Fried Cashew Nuts & Raisins <span class="bracket-lang">(முந்திரி, உலர் திராட்சை) / (काजू, किशमिश)</span></label></li>
+                            <li class="list-row"><input type="checkbox" id="bir-th-5" class="accessible-checkbox"><label for="bir-th-5">Pure Clarified Ghee & Malabar Masala <span class="bracket-lang">(நெய், பிரியாணி மசாலா) / (घी, बिरयानी मसाला)</span></label></li>
                         </ul>
                     </div>
                     <div class="details-pane process-steps">
@@ -443,10 +452,9 @@
         </div>
     </main>
 
-    <!-- Simple Modern Academic Footer -->
     <footer class="portfolio-footer">
         <div class="container">
-            <p>&copy; 2026 Dr. Prabakaran Kamalanathan. Clean Academic Edition Portfolio Engine.</p>
+            <p>&copy; 2026 Dr. Prabakaran Kamalanathan. High-Accessibility Comfort Edition.</p>
         </div>
     </footer>
 
