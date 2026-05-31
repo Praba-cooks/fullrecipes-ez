@@ -1,33 +1,43 @@
-// --- Simple Senior-Friendly Category Selector ---
+// --- Dual-Action Search & Category Controller for Elders ---
 
 document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('recipeSearch');
     const tabButtons = document.querySelectorAll('.tab-btn');
     const recipeCards = document.querySelectorAll('.recipe-card');
 
+    // Consolidated filter function managing both category tabs and text search
+    function performFiltering() {
+        const queryText = searchInput.value.toLowerCase().trim();
+        const activeFilter = document.querySelector('.tab-btn.active').getAttribute('data-filter');
+
+        recipeCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            const cardContent = card.textContent.toLowerCase();
+
+            // Match structural category values
+            const matchesTab = (activeFilter === 'all' || cardCategory === activeFilter);
+            // Match textual content parameters
+            const matchesSearch = (queryText === '' || cardContent.includes(queryText));
+
+            if (matchesTab && matchesSearch) {
+                card.style.display = "block";
+                card.style.opacity = "1";
+            } else {
+                card.style.display = "none";
+                card.style.opacity = "0";
+            }
+        });
+    }
+
+    // Capture search text inputs instantly
+    searchInput.addEventListener('input', performFiltering);
+
+    // Capture category button selections
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // 1. Clear active design states from all buttons
             tabButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // 2. Set the newly selected button to high-contrast blue state
             button.classList.add('active');
-
-            // 3. Match the data-filter label code
-            const targetCategory = button.getAttribute('data-filter');
-
-            // 4. Update display visibility states immediately
-            recipeCards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
-
-                if (cardCategory === targetCategory) {
-                    card.style.display = "block";
-                    // Brief delay ensures smooth fade appearance 
-                    setTimeout(() => card.style.opacity = "1", 10);
-                } else {
-                    card.style.display = "none";
-                    card.style.opacity = "0";
-                }
-            });
+            performFiltering();
         });
     });
 });
