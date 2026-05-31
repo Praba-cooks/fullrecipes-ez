@@ -1,43 +1,68 @@
-// --- Dual-Action Search & Category Controller for Elders ---
+// --- Minimalist Portfolio Interactive Scripting Controller ---
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('recipeSearch');
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const recipeCards = document.querySelectorAll('.recipe-card');
 
-    // Consolidated filter function managing both category tabs and text search
-    function performFiltering() {
-        const queryText = searchInput.value.toLowerCase().trim();
-        const activeFilter = document.querySelector('.tab-btn.active').getAttribute('data-filter');
+    // 1. Cross-out Checking System Component Logic
+    const listRows = document.querySelectorAll('.list-row');
 
-        recipeCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-category');
-            const cardContent = card.textContent.toLowerCase();
+    listRows.forEach(row => {
+        const checkbox = row.querySelector('input[type="checkbox"]');
+        const label = row.querySelector('label');
 
-            // Match structural category values
-            const matchesTab = (activeFilter === 'all' || cardCategory === activeFilter);
-            // Match textual content parameters
-            const matchesSearch = (queryText === '' || cardContent.includes(queryText));
+        row.addEventListener('click', (e) => {
+            if (e.target !== checkbox && e.target !== label) {
+                checkbox.checked = !checkbox.checked;
+            }
+            updateCheckState(row, checkbox.checked);
+        });
 
-            if (matchesTab && matchesSearch) {
-                card.style.display = "block";
-                card.style.opacity = "1";
+        checkbox.addEventListener('change', () => {
+            updateCheckState(row, checkbox.checked);
+        });
+    });
+
+    function updateCheckState(element, isChecked) {
+        if (isChecked) {
+            element.classList.add('line-through-fade');
+        } else {
+            element.classList.remove('line-through-fade');
+        }
+    }
+
+    // 2. Comprehensive Search and Tab Categorization Filters
+    const searchBar = document.getElementById('recipeSearch');
+    const filterButtons = document.querySelectorAll('.nav-filter-btn');
+    const recipes = document.querySelectorAll('.clean-recipe-card');
+
+    function applyUnifiedFilters() {
+        const textQuery = searchBar.value.toLowerCase().trim();
+        const targetedCategory = document.querySelector('.nav-filter-btn.active').getAttribute('data-filter');
+
+        recipes.forEach(recipe => {
+            const recipeCategory = recipe.getAttribute('data-category');
+            const dataDump = recipe.textContent.toLowerCase();
+
+            const isMatchedTab = (targetedCategory === 'all' || recipeCategory === targetedCategory);
+            const isMatchedSearch = (textQuery === '' || dataDump.includes(textQuery));
+
+            if (isMatchedTab && isMatchedSearch) {
+                recipe.style.display = "block";
+                recipe.style.opacity = "1";
             } else {
-                card.style.display = "none";
-                card.style.opacity = "0";
+                recipe.style.display = "none";
+                recipe.style.opacity = "0";
             }
         });
     }
 
-    // Capture search text inputs instantly
-    searchInput.addEventListener('input', performFiltering);
+    // Interactive Core Triggers
+    searchBar.addEventListener('input', applyUnifiedFilters);
 
-    // Capture category button selections
-    tabButtons.forEach(button => {
+    filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            tabButtons.forEach(btn => btn.classList.remove('active'));
+            filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
-            performFiltering();
+            applyUnifiedFilters();
         });
     });
 });
