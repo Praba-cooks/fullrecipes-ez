@@ -1,22 +1,17 @@
-/* --- Academic Culinary Engine: Premium Layout Architecture --- */
-
 :root {
-    /* Sophisticated Editorial Color Palette */
-    --canvas-bg: #fdfbf7;        /* Soft vintage cream base to reduce display glare */
-    --surface-card: #ffffff;    /* Stark white card backgrounds for clean layering */
-    --ink-primary: #1e293b;     /* Deep charcoal blue for crisp, high-contrast text */
-    --ink-secondary: #475569;   /* Muted slate for multi-language translations */
-    --ink-light: #94a3b8;       /* Subtle decorative lines and icon alignments */
+    --canvas-bg: #fdfbf7;        
+    --surface-card: #ffffff;    
+    --ink-primary: #1e293b;     
+    --ink-secondary: #475569;   
+    --ink-light: #94a3b8;       
     
-    /* Strategic Academic Theme Accents */
-    --accent-buttermilk: #0284c7; /* Vibrant teal blue */
-    --accent-dessert: #d97706;    /* Deep warm amber */
-    --accent-rice: #16a34a;       /* Classic organic jade green */
-    --accent-biryani: #dc2626;    /* Rich imperial crimson */
-    --border-soft: #ebdacf;       /* Soft warm cream border accent */
+    --accent-buttermilk: #0284c7; 
+    --accent-dessert: #d97706;    
+    --accent-rice: #16a34a;       
+    --accent-biryani: #dc2626;    
+    --border-soft: #ebdacf;       
 }
 
-/* Base Structural Setup */
 body {
     background-color: var(--canvas-bg);
     color: var(--ink-primary);
@@ -27,7 +22,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Header Presentation Block */
 header {
     background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
     color: #ffffff;
@@ -69,7 +63,6 @@ header h1 {
     color: #cbd5e1;
 }
 
-/* Control Hub & Live Filtering Panel */
 .navigation-panel {
     max-width: 900px;
     margin: 40px auto 10px auto;
@@ -117,7 +110,6 @@ header h1 {
     margin-bottom: 15px;
 }
 
-/* Category Filter Tabs Layout */
 .filter-tabs {
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +143,6 @@ header h1 {
     margin-top: 3px;
 }
 
-/* Live Active Tab States */
 .tab-btn:hover {
     transform: translateY(-2px);
     border-color: var(--ink-light);
@@ -171,7 +162,6 @@ header h1 {
     color: #94a3b8;
 }
 
-/* Master Grid Core Stream */
 main {
     max-width: 900px;
     margin: 40px auto 60px auto;
@@ -181,7 +171,6 @@ main {
     gap: 35px;
 }
 
-/* Editorial Recipe Presentation Cards */
 .recipe-card {
     background: var(--surface-card);
     border-radius: 16px;
@@ -198,7 +187,6 @@ main {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
 }
 
-/* Dynamic Left-Border Ribbon Maps via Data Tags */
 .recipe-card[data-category="buttermilk"] { border-left: 6px solid var(--accent-buttermilk); }
 .recipe-card[data-category="dessert"] { border-left: 6px solid var(--accent-dessert); }
 .recipe-card[data-category="rice"] { border-left: 6px solid var(--accent-rice); }
@@ -226,7 +214,6 @@ main {
     margin: 0 0 25px 0;
 }
 
-/* Structural Metadata Metric Nodes */
 .metrics-dashboard {
     display: flex;
     gap: 30px;
@@ -258,7 +245,6 @@ main {
     margin-top: 2px;
 }
 
-/* Structural Step Content Columns */
 .recipe-layout {
     display: flex;
     flex-direction: column;
@@ -273,13 +259,11 @@ main {
     padding-bottom: 6px;
 }
 
-/* Styling Specific Sections based on Parent Accent Mapping */
 .recipe-card[data-category="buttermilk"] h3 { border-bottom: 2px solid var(--accent-buttermilk); }
 .recipe-card[data-category="dessert"] h3 { border-bottom: 2px solid var(--accent-dessert); }
 .recipe-card[data-category="rice"] h3 { border-bottom: 2px solid var(--accent-rice); }
 .recipe-card[data-category="biryani"] h3 { border-bottom: 2px solid var(--accent-biryani); }
 
-/* Checklist Component Formats */
 .ingredient-list {
     list-style: none;
     padding: 0;
@@ -317,7 +301,6 @@ main {
     margin-bottom: 4px;
 }
 
-/* Bracketed Multilingual Highlight Strips */
 .lang-sub {
     display: block;
     font-size: 0.95rem;
@@ -337,7 +320,6 @@ main {
     margin: 15px 0;
 }
 
-/* Global Footer Alignment */
 footer {
     background-color: #0f172a;
     color: #94a3b8;
@@ -352,7 +334,6 @@ footer p {
     margin: 0;
 }
 
-/* Fluid Responsive Breakpoint Handlers */
 @media (max-width: 640px) {
     header h1 { font-size: 2rem; }
     .recipe-card { padding: 25px; }
