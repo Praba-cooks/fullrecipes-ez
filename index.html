@@ -3,459 +3,691 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Prabakaran Kamalanathan | Academic Culinary Portfolio</title>
+    <title>Dr. Prabakaran's Kitchen - Simple Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Project Care: Soft Traditional Header -->
-    <header class="portfolio-header">
-        <div class="container">
-            <span class="institution-meta">Department of Food Science & Gastronomy</span>
+    <header>
+        <div class="header-container">
             <h1>Dr. Prabakaran Kamalanathan</h1>
-            <p class="academic-title">Associate Professor & Chief Culinary Researcher</p>
-            <div class="profile-summary">
-                <p>Welcome to my research repository. This platform serves as a clean, structured record of standardized culinary formulas, focusing on systematic ingredient ratios, exact process durations, and predictable cooking outcomes.</p>
+            <p class="subtitle">My Kitchen Recipes (என் சமையல் குறிப்புகள் / मेरी रसोई की विधि)</p>
+            <div class="bio-container">
+                <p>Welcome! I am a Chemistry Professor who loves to cook simple, healthy, and refreshing food. Here is an easy guide to making healthy items at home.</p>
             </div>
         </div>
     </header>
 
-    <!-- Simple High-Visibility Filter Tabs (No Tricky Dropdowns) -->
-    <section class="control-hub">
-        <div class="container">
-            <div class="filter-navigation">
-                <button class="nav-filter-btn active" data-filter="all">Show All Recipes</button>
-                <button class="nav-filter-btn" data-filter="buttermilk">Buttermilk Series</button>
-                <button class="nav-filter-btn" data-filter="dessert">Traditional Desserts</button>
-                <button class="nav-filter-btn" data-filter="rice">Variety Rice Selection</button>
-                <button class="nav-filter-btn" data-filter="biryani">Biryani Varieties</button>
+    <div class="navigation-panel">
+        
+        <div class="search-box-container">
+            <label for="recipeSearch" class="search-label">🔍 Search for a recipe or ingredient (தேடவும் / यहाँ खोजें):</label>
+            <input type="text" id="recipeSearch" class="elder-search-bar" placeholder="Type here... e.g., Lemon, Rice, மோர், சர்க்கரை...">
+        </div>
+
+        <p class="nav-instruction">👇 Click a category below to see the recipes (உங்களுக்கு வேண்டிய வகையைத் தேர்ந்தெடுக்கவும் / अपनी पसंद का वर्ग चुनें):</p>
+        
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">
+                <span class="btn-main">🌟 SHOW ALL RECIPES</span>
+                <span class="btn-sub">(எல்லா சமையல் குறிப்புகள் / सभी नुस्खे)</span>
+            </button>
+
+            <button class="tab-btn" data-filter="buttermilk">
+                <span class="btn-main">🥛 BUTTERMILK CATEGORY</span>
+                <span class="btn-sub">(மோர் வகைகள் / छाछ के प्रकार)</span>
+            </button>
+            
+            <button class="tab-btn" data-filter="dessert">
+                <span class="btn-main">🍯 DESSERT CATEGORY</span>
+                <span class="btn-sub">(இனிப்பு வகைகள் / मिठाई के प्रकार)</span>
+            </button>
+
+            <button class="tab-btn" data-filter="rice">
+                <span class="btn-main">🍚 VARIETY RICE CATEGORY</span>
+                <span class="btn-sub">(கலவை சாத வகைகள் / वैरायटी राइस)</span>
+            </button>
+
+            <!-- New Biryani Category Button -->
+            <button class="tab-btn" data-filter="biryani">
+                <span class="btn-main">🍗 SPECIAL BIRYANI CATEGORY</span>
+                <span class="btn-sub">(பிரியாணி வகைகள் / बिरयानी के प्रकार)</span>
+            </button>
+        </div>
+    </div>
+
+    <main id="recipeContainer">
+
+        <!-- Buttermilk Category -->
+        <article class="recipe-card" data-category="buttermilk">
+            <h2 class="recipe-title">Pudina Buttermilk <br><span class="translation-title">(புதினா மோர் / पुदीना छाछ)</span></h2>
+            <p class="recipe-description">This is a wonderful, traditional drink to cool down your body, help with digestion, and keep you feeling energetic all day long.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">10 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">2 Glasses</strong>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Master Recipe Matrix (Static Single-Column Flow) -->
-    <main class="recipe-container">
-        <div class="container grid-layout" id="recipeGrid">
-
-            <!-- CARD 1: PUDINA BUTTERMILK -->
-            <article class="clean-recipe-card" data-category="buttermilk">
-                <div class="card-header-block">
-                    <span class="category-indicator type-buttermilk">Buttermilk Formula</span>
-                    <h2 class="card-recipe-title">Refreshing Pudina Buttermilk</h2>
-                    <p class="card-brief">A traditional sour-milk emulsion accented with crushed volatile herbal extracts for instantaneous physical cooling.</p>
-                </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 10 Mins</span>
-                    <span><strong>Temperature:</strong> Chilled</span>
-                    <span><strong>Yield:</strong> 2 Servings</span>
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Fresh Curd (தயிர் / दही)</li>
+                        <li>✔️ 1.5 Cups Chilled Water (குளிர்ந்த நீர் / ठंडा पानी)</li>
+                        <li>✔️ 15-20 Fresh Mint Leaves (புதினா இலைகள் / पुदीना पत्ती)</li>
+                        <li>✔️ 1 Small Green Chili - Optional (பச்சை மிளகாய் / हरी मिर्च)</li>
+                        <li>✔️ 1/2 teaspoon Cumin Powder (சீரகத் தூள் / जीरा पाउडर)</li>
+                        <li>✔️ A pinch of Salt to taste (உப்பு / नमक)</li>
+                    </ul>
                 </div>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row">
-                                <input type="checkbox" id="bml-1" class="accessible-checkbox">
-                                <label for="bml-1">1 Cup Fresh Thick Curd / Yogurt</label>
-                            </li>
-                            <li class="list-row">
-                                <input type="checkbox" id="bml-2" class="accessible-checkbox">
-                                <label for="bml-2">1.5 Cups Chilled Water</label>
-                            </li>
-                            <li class="list-row">
-                                <input type="checkbox" id="bml-3" class="accessible-checkbox">
-                                <label for="bml-3">15 Fresh Mint Leaves / Pudina</label>
-                            </li>
-                            <li class="list-row">
-                                <input type="checkbox" id="bml-4" class="accessible-checkbox">
-                                <label for="bml-4">1 Small Green Chili</label>
-                            </li>
-                            <li class="list-row">
-                                <input type="checkbox" id="bml-5" class="accessible-checkbox">
-                                <label for="bml-5">1/2 tsp Roasted Cumin Powder & Salt</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Mince the mint leaves and green chili into a fine consistency to break open oil pockets.</li>
-                            <li>Whisk the fresh curd until completely smooth and free of large fat solids.</li>
-                            <li>Pour in the chilled water, add the processed herbs, cumin powder, and salt, then blend briefly until slightly frothy.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <hr class="section-divider">
 
-            <!-- CARD 2: TAMIL NADU RAVA LADDU -->
-            <article class="clean-recipe-card" data-category="dessert">
-                <div class="card-header-block">
-                    <span class="category-indicator type-dessert">Dessert Formula</span>
-                    <h2 class="card-recipe-title">Tamil Nadu Style Rava Laddu</h2>
-                    <p class="card-brief">A signature festive confection made from roasted semolina crystals, sugar, and rich clarified butter, hand-shaped into dense sweet spheres.</p>
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Grind or crush the fresh mint leaves and green chili gently to bring out their beautiful aroma.
+                            <br><span class="lang-sub">(புதினா மற்றும் பச்சை மிளகாயை நன்றாக அரைத்துக்கொள்ளவும். / पुदीना और हरी मिर्च को अच्छे से पीस लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Take the curd in a big bowl and whisk it smoothly with a spoon or a wooden churner (Mathu).
+                            <br><span class="lang-sub">(தயிரை ஒரு பாத்திரத்தில் ஊற்றி மத்து அல்லது கரண்டியால் கட்டியில்லாமல் நன்றாகக் கடையவும். / दही को एक बर्तन में लेकर मथानी या चम्मच से अच्छे से फेंट लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Slowly pour the cold water into the smooth curd and stir it gently.
+                            <br><span class="lang-sub">(கடைந்த தயிரில் குளிர்ந்த நீரை ஊற்றி நன்றாகக் கலக்கவும். / अब फैंटे हुए दही में ठंडा पानी मिलाकर अच्छे से चलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Add your ground mint paste, cumin powder, and salt. Mix everything together carefully.
+                            <br><span class="lang-sub">(அரைத்த புதினா விழுது, சீரகத் தூள் மற்றும் தேவையான அளவு உப்பு சேர்த்து கலக்கவும். / अब इसमें पुदीना पेस्ट, जीरा पाउडर और नमक डालकर अच्छी तरह मिला लें।)</span>
+                        </li>
+                    </ol>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 25 Mins</span>
-                    <span><strong>Temperature:</strong> Medium Heat</span>
-                    <span><strong>Yield:</strong> 10-12 Laddus</span>
-                </div>
+            </div>
+        </article>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="ldl-1" class="accessible-checkbox"><label for="ldl-1">1 Cup Fine Semolina / Rava / Sooji</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-2" class="accessible-checkbox"><label for="ldl-2">3/4 Cup Powdered Sugar</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-3" class="accessible-checkbox"><label for="ldl-3">1/4 Cup Pure Melted Ghee</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-4" class="accessible-checkbox"><label for="ldl-4">2-3 tbsp Warm Milk</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-5" class="accessible-checkbox"><label for="ldl-5">10 Cashew pieces & 1 tbsp Raisins</label></li>
-                            <li class="list-row"><input type="checkbox" id="ldl-6" class="accessible-checkbox"><label for="ldl-6">1/2 tsp Fresh Cardamom Powder</label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Dry roast the semolina in a thick-bottomed pan on low flame until highly fragrant. Do not color change or brown the rava. Set aside to cool.</li>
-                            <li>Heat ghee in another pan and fry the cashew fractions and raisins until light golden brown.</li>
-                            <li>Pulse the cooled rava slightly with sugar in a grinder. Mix with cardamom, fried nuts, and warm ghee. Add milk in small increments, compress firmly, and shape into uniform spheres.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- Dessert Category -->
+        <article class="recipe-card" data-category="dessert">
+            <h2 class="recipe-title">Tamil Nadu Style Rava Laddu <br><span class="translation-title">(நெய் ரவா லாடு / सूजी के लड्डू)</span></h2>
+            <p class="recipe-description">A beautiful, sweet festive treat made with roasted semolina, aromatic ghee, and crunchy cashews rolled into soft delicious sweet balls.</p>
 
-            <!-- CARD 3: TOMATO RICE -->
-            <article class="clean-recipe-card" data-category="rice">
-                <div class="card-header-block">
-                    <span class="category-indicator type-rice">Variety Rice Selection</span>
-                    <h2 class="card-recipe-title">Thakkali Sadam (Tomato Rice)</h2>
-                    <p class="card-brief">A highly popular Tamil Nadu style savory rice prepared by folding cooked rice into a spiced, concentrated tomato and onion reduction sauce.</p>
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">25 Minutes</strong>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 30 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Tangy & Savory</span>
-                    <span><strong>Grain State:</strong> Separated Grains</span>
+                <div class="metric-node">
+                    <span class="label">Yields (அளவு / मात्रा)</span>
+                    <strong class="value">10-12 Laddus</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Fine Rava / Semolina (ரவை / सूजी)</li>
+                        <li>✔️ 3/4 Cup Powdered Sugar (சர்க்கரை பொடி / पिसी हुई चीनी)</li>
+                        <li>✔️ 1/4 Cup Pure Ghee (உருகிய நெய் / शुद्ध घी)</li>
+                        <li>✔️ 2-3 tablespoons Warm Milk (வெதுவெதுப்பான பால் / हल्का गर्म दूध)</li>
+                        <li>✔️ 10 Cashew nuts & Raisins (முந்திரி மற்றும் உலர் திராட்சை / काजू और किशमिश)</li>
+                        <li>✔️ 1/2 teaspoon Cardamom Powder (ஏலக்காய் தூள் / इलायची पाउडर)</li>
+                    </ul>
                 </div>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-tr-1" class="accessible-checkbox"><label for="rice-tr-1">1 Cup Pre-cooked Basmati or Raw Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-2" class="accessible-checkbox"><label for="rice-tr-2">3 Ripe Tomatoes (Finely chopped)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-3" class="accessible-checkbox"><label for="rice-tr-3">1 Medium Onion</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-4" class="accessible-checkbox"><label for="rice-tr-4">1 tbsp Pure Sesame / Gingelly Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-tr-5" class="accessible-checkbox"><label for="rice-tr-5">Tempering: Mustard, Chana Dal, Turmeric, Chili Powder</label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Splutter mustard seeds in hot sesame oil, then fry chana dal until golden.</li>
-                            <li>Sauté onions followed by chopped tomatoes until completely soft and oil begins to separate around the edges.</li>
-                            <li>Add the cooled pre-cooked rice to the pan and gently mix to uniform distribution without breaking the structural shape of the grains.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <hr class="section-divider">
 
-            <!-- CARD 4: COCONUT RICE -->
-            <article class="clean-recipe-card" data-category="rice">
-                <div class="card-header-block">
-                    <span class="category-indicator type-rice">Variety Rice Selection</span>
-                    <h2 class="card-recipe-title">Thengai Sadam (Coconut Rice)</h2>
-                    <p class="card-brief">A mild and highly aromatic preparation combining fresh, delicately flaked coconut flesh with tempered spices and non-sticky rice grains.</p>
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Dry roast the Rava in a pan on low flame for 4 to 5 minutes until it smells nice. Keep it separate and let it cool. Do not burn it.
+                            <br><span class="lang-sub">(ரவையை ஒரு கடாயில் மிதமான தீயில் 4-5 நிமிடங்கள் வாசம் வரும் வரை வறுத்து தனியாக வைக்கவும். / सूजी को एक कड़ाही में धीमी आंच पर 4-5 मिनट के लिए खुशबू आने तक भूनें और अलग रख लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Heat ghee in a small pan, add broken cashews and raisins. Fry them until the cashews are golden brown and raisins puff up.
+                            <br><span class="lang-sub">(சிறிய கடாயில் நெய் ஊற்றி முந்திரி, திராட்சையை பொன்னிறமாக வறுத்து எடுத்துக்கொள்ளவும். / एक छोटी कड़ाही में घी गर्म करें, उसमें काजू और किशमिश को सुनहरा होने तक भून लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Put the cooled roasted rava and sugar into a mixer and grind it gently into a semi-fine powder. Add cardamom powder into this mix.
+                            <br><span class="lang-sub">(வறுத்த ரவை மற்றும் சர்க்கரையை மிக்ஸியில் போட்டு லேசாக அரைத்து, அதனுடன் ஏலக்காய் தூள் சேர்க்கவும். / ठंडी की हुई सूजी और चीनी को मिक्सी में डालकर हल्का पीस लें, फिर उसमें इलायची पाउडर मिलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Pour the warm ghee with the fried cashews and raisins directly into the rava powder. Mix it quickly using a spoon.
+                            <br><span class="lang-sub">(வறுத்த முந்திரி, திராட்சையுடன் இருக்கும் சூடான நெய்யை ரவை கலவையில் ஊற்றி கரண்டியால் நன்றாகக் கலக்கவும். / अब भुने हुए काजू, किशमिश और गर्म घी को सूजी के मिश्रण में डालकर चम्मच से अच्छे से मिलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 5 (ஐந்தாம் படி / पांचवां कदम):</strong> <br>
+                            Sprinkle warm milk little by little. Take a small portion of the warm mixture in your hands and press firmly to roll it into neat round balls. Let them sit to dry and become solid.
+                            <br><span class="lang-sub">(வெதுவெதுப்பான பாலை லேசாகத் தெளித்து, கலவை சூடாக இருக்கும்போதே கைகளில் பிடித்து உருண்டைகளாக உருட்டவும். / अब थोड़ा सा गर्म दूध छिड़कें और मिश्रण के गर्म रहते ही हाथों से दबाकर गोल-गोल लड्डू बना लें।)</span>
+                        </li>
+                    </ol>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 20 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Mild & Nutty</span>
-                    <span><strong>Grain State:</strong> Separated Grains</span>
-                </div>
+            </div>
+        </article>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-cr-1" class="accessible-checkbox"><label for="rice-cr-1">1 Cup Cooled Boiled Rice</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-2" class="accessible-checkbox"><label for="rice-cr-2">1/2 Cup Fresh Grated Coconut</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-3" class="accessible-checkbox"><label for="rice-cr-3">1 tbsp Cold-Pressed Coconut Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-4" class="accessible-checkbox"><label for="rice-cr-4">Sauté Mix: Urad Dal, Mustard, Cashews, Curry Leaves</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-cr-5" class="accessible-checkbox"><label for="rice-cr-5">2 Green Chilis & Ginger bits</label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Heat coconut oil in a pan, temper mustard seeds, urad dal, cashews, ginger, and curry leaves until fragrant.</li>
-                            <li>Turn heat parameters down to low, add the grated coconut, and toss for 1-2 minutes just to dry surface moisture without color change.</li>
-                            <li>Introduce your pre-cooked rice, add salt to taste, and blend carefully with a soft spatula until warm.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- Rice Category -->
+        <article class="recipe-card" data-category="rice">
+            <h2 class="recipe-title">Tomato Rice <br><span class="translation-title">(தக்காளி சாதம் / टमाटर चावल)</span></h2>
+            <p class="recipe-description">A wonderful, savory and tangy Tamil Nadu style comfort food made by mixing fluffy rice into a well-cooked aromatic spiced tomato paste matrix.</p>
 
-            <!-- CARD 5: TAMARIND RICE -->
-            <article class="clean-recipe-card" data-category="rice">
-                <div class="card-header-block">
-                    <span class="category-indicator type-rice">Variety Rice Selection</span>
-                    <h2 class="card-recipe-title">Puli Sadam (Tamarind Rice)</h2>
-                    <p class="card-brief">A traditional South Indian travel staple showcasing complex tangy depths, produced via a robust tamarind reduction paste and signature dry roasted spice powder.</p>
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">30 Minutes</strong>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 40 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Bold & Tangy</span>
-                    <span><strong>Grain State:</strong> Separated Grains</span>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">2-3 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Boiled Rice - Cooled completely (சாதம் / पके हुए चावल)</li>
+                        <li>✔️ 3 Large Chopped Tomatoes (தக்காளி பழங்கள் / टमाटर)</li>
+                        <li>✔️ 1 Medium Sliced Onion (வெங்காயம் / प्याज)</li>
+                        <li>✔️ 1 tablespoon Gingelly Oil / Sesame Oil (நல்லெண்ணெய் / तिल का तेल)</li>
+                        <li>✔️ 1/2 tsp Mustard seeds & White Gram (கடுகு, உளுத்தம் பருப்பு / राई, उड़द दाल)</li>
+                        <li>✔️ 1/2 tsp Turmeric & Chili Powder (மஞ்சள் மற்றும் மிளகாய் தூள் / हल्दी, मिर्च पाउडर)</li>
+                    </ul>
                 </div>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-pr-1" class="accessible-checkbox"><label for="rice-pr-1">1 Cup Steamed Rice (cooled completely)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-2" class="accessible-checkbox"><label for="rice-pr-2">1 Lemon-sized ball of Tamarind (extracted in hot water)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-3" class="accessible-checkbox"><label for="rice-pr-3">3 tbsp Pure Gingelly / Sesame Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-4" class="accessible-checkbox"><label for="rice-pr-4">Custom Powder: Roasted Fenugreek, Coriander, Red Chili</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-pr-5" class="accessible-checkbox"><label for="rice-pr-5">Crunch Base: Roasted Peanuts, Chana Dal, Mustard, Asafoetida</label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Dry roast fenugreek, coriander seeds, and red chilis in a hot skillet, grind to a fine powder.</li>
-                            <li>Heat gingelly oil in a pan, fry tempering ingredients including peanuts, then add the tamarind water extract. Simmer until oil surfaces on top. Stir in the ground powder.</li>
-                            <li>Combine sections of this thick tamarind sauce directly into cooled rice, turning carefully until every grain is dark golden.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <hr class="section-divider">
 
-            <!-- CARD 6: LEMON RICE -->
-            <article class="clean-recipe-card" data-category="rice">
-                <div class="card-header-block">
-                    <span class="category-indicator type-rice">Variety Rice Selection</span>
-                    <h2 class="card-recipe-title">Elumichai Sadam (Lemon Rice)</h2>
-                    <p class="card-brief">A bright, refreshing lunchtime classic that pairs aromatic curcumin-infused oil with raw, unheated citrus juice to retain crisp flavor integrity.</p>
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Heat gingelly oil in a pan. Add mustard seeds and let them splutter, then fry the gram until it turns golden brown.
+                            <br><span class="lang-sub">(கடாயில் நல்லெண்ணெய் ஊற்றி சூடானதும் கடுகு, உளுத்தம் பருப்பு தாளிக்கவும். / कड़ाही में तिल का तेल गर्म करके राई और उड़द दाल का तड़का लगाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Add sliced onions and cook until soft. Then add chopped tomatoes, turmeric, chili powder, and salt. Cook until tomatoes become a soft thick paste.
+                            <br><span class="lang-sub">(வெங்காயம், தக்காளி சேர்த்து நன்றாக சுருள வதக்கி தொக்கு பதத்திற்கு கொண்டு வரவும். / प्याज और टमाटर डालकर अच्छे से भूनें जब तक कि टमाटर गलकर गाढ़ा पेस्ट न बन जाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Gently mix the pre-cooked cooled white rice into this hot tomato paste without breaking the rice grains.
+                            <br><span class="lang-sub">(செய்து வைத்துள்ள தக்காளி தொக்கில் உதிரியான சாதத்தை சேர்த்து லேசாகக் கிளறவும். / अब तैयार पेस्ट में ठंडे पके हुए चावल डालकर हल्के हाथों से मिला लें।)</span>
+                        </li>
+                    </ol>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 20 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Zesty & Vibrant</span>
-                    <span><strong>Grain State:</strong> Separated Grains</span>
-                </div>
+            </div>
+        </article>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="rice-lr-1" class="accessible-checkbox"><label for="rice-lr-1">1 Cup Fluffy Boiled Rice (cooled completely)</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-2" class="accessible-checkbox"><label for="rice-lr-2">3 tbsp Fresh Squeezed Lemon Juice</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-3" class="accessible-checkbox"><label for="rice-lr-3">1/2 tsp Turmeric Powder</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-4" class="accessible-checkbox"><label for="rice-lr-4">1.5 tbsp Refined Cooking Oil</label></li>
-                            <li class="list-row"><input type="checkbox" id="rice-lr-5" class="accessible-checkbox"><label for="rice-lr-5">Sauté Base: Mustard, Urad Dal, Roasted Peanuts, Green Chilis, Curry Leaves</label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Heat oil, sizzle mustard seeds, and toast the peanuts, urad dal, chilis, and curry leaves until golden brown.</li>
-                            <li>Stir in turmeric powder to color the oil, then remove the skillet entirely from the heat grid. Let it cool for 60 seconds before pouring in fresh lemon juice.</li>
-                            <li>Gently fold the cooled citrus mixture through the white rice grains until uniformly yellow.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <article class="recipe-card" data-category="rice">
+            <h2 class="recipe-title">Coconut Rice <br><span class="translation-title">(தேங்காய் சாதம் / नारियल चावल)</span></h2>
+            <p class="recipe-description">A very mild, aromatic dish made with freshly grated raw coconut strands, light crunchy lentils, and premium coconut oil base.</p>
 
-            <!-- CARD 7: DINDIGUL SEERAGA SAMBA MUTTON BIRYANI -->
-            <article class="clean-recipe-card" data-category="biryani">
-                <div class="card-header-block">
-                    <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Dindigul Seeraga Samba Mutton Biryani <span class="bracket-lang">(திண்டுக்கல் சீரக சம்பா மட்டன் பிரியாணி) / (டிண்டிगुल सीरागा सांबा मटन बिरयानी)</span></h2>
-                    <p class="card-brief">An authentic regional specialty using short, aromatic Seeraga Samba grains to maximize absorption of mutton fat, curd, and peppery spice notes.</p>
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">20 Minutes</strong>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 50 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Spicy & Peppery</span>
-                    <span><strong>Grain Base:</strong> Seeraga Samba Rice</span>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">2 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Cooled Boiled Rice (உதிரி சாதம் / पके हुए चावल)</li>
+                        <li>✔️ 1/2 Cup Freshly Grated Coconut (துருவிய தேங்காய் / कद्दूकस नारियल)</li>
+                        <li>✔️ 1 tablespoon Pure Coconut Oil (தேங்காய் எண்ணெய் / नारियल का तेल)</li>
+                        <li>✔️ 1/2 tsp Mustard seeds, Chana dal & Cashews (கடுகு, கடலைப் பருப்பு, முந்திரி / राई, चना दाल, काजू)</li>
+                        <li>✔️ 2 Green Chilis & Curry Leaves (பச்சை மிளகாய், கறிவேப்பிலை / हरी मिर्च, कड़ी पत्ता)</li>
+                    </ul>
                 </div>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-db-1" class="accessible-checkbox"><label for="bir-db-1">500g Fresh Mutton Pieces <span class="bracket-lang">(மட்டன்) / (मटन)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-2" class="accessible-checkbox"><label for="bir-db-2">2 Cups Seeraga Samba Rice <span class="bracket-lang">(சீரக சம்பா அரிசி) / (सीरागा सांबा चावल)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-3" class="accessible-checkbox"><label for="bir-db-3">100g Small onions / Shallots <span class="bracket-lang">(சின்ன வெங்காயம்) / (छोटे प्याज)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-4" class="accessible-checkbox"><label for="bir-db-4">2 tbsp Ginger-Garlic Paste <span class="bracket-lang">(இஞ்சி பூண்டு விழுது) / (अदरक-लहसुन पेस्ट)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-db-5" class="accessible-checkbox"><label for="bir-db-5">1/2 Cup Yogurt, Mint & Ghee <span class="bracket-lang">(தயிர், புதினா, நெய்) / (दही, पुदीना, घी)</span></label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Sauté crushed shallots, ginger-garlic paste, and green chilis in hot ghee until transparent.</li>
-                            <li>Incorporate mutton pieces and yogurt; pressure cook the meat base until tender and succulent.</li>
-                            <li>Add water matching your rice measurement (1:2 ratio), bring to a full boil, fold in the soaked rice, cover, and steam-cook on low heat for 15 minutes.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <hr class="section-divider">
 
-            <!-- CARD 8: FINE KOLKATA STYLE CHICKEN BIRYANI -->
-            <article class="clean-recipe-card" data-category="biryani">
-                <div class="card-header-block">
-                    <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Fine Kolkata Style Chicken Biryani <span class="bracket-lang">(கொல்கத்தா ஸ்டைல் சிக்கன் பிரியாணி) / (कोलकाता स्टाइल चिकन बिरयानी)</span></h2>
-                    <p class="card-brief">A refined, royal preparation layered with par-boiled Basmati rice, soft spiced potatoes, and a delicate splash of rose, keora, and saffron-infused milk extracts.</p>
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Heat coconut oil. Sauté mustard seeds, chana dal, broken cashews, green chilis, and curry leaves until fragrant.
+                            <br><span class="lang-sub">(தேங்காய் எண்ணெயில் கடுகு, கடலைப்பருப்பு, முந்திரி, மிளகாய் மற்றும் கறிவேப்பிலை தாளிக்கவும். / नारियल तेल में राई, चना दाल, काजू, मिर्च और कड़ी पत्ता भून लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Turn to low flame. Add freshly grated coconut and stir continuously for 1-2 minutes. Do not let the coconut brown.
+                            <br><span class="lang-sub">(குறைந்த தீயில் தேங்காய் துருவலை சேர்த்து நிறம் மாறாமல் லேசாக வதக்கவும். / आंच धीमी करके कद्दूकस नारियल डालें और 1-2 मिनट चलाएं। रंग सफेद ही रहना चाहिए।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Add the white rice and salt. Mix carefully to combine the pure coconut oils uniformly with the rice grains.
+                            <br><span class="lang-sub">(உதிரி சாதம் மற்றும் உப்பு சேர்த்து நன்றாகக் கலந்து இறக்கவும். / अब चावल और नमक डालकर अच्छी तरह मिलाएं और आंच से उतार लें।)</span>
+                        </li>
+                    </ol>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 60 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Subtle & Fragrant</span>
-                    <span><strong>Grain Base:</strong> Long-Grain Basmati</span>
-                </div>
+            </div>
+        </article>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-kb-1" class="accessible-checkbox"><label for="bir-kb-1">500g Chicken Pieces <span class="bracket-lang">(கோழி இறைச்சி) / (चिकन)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-2" class="accessible-checkbox"><label for="bir-kb-2">2 Large Potatoes <span class="bracket-lang">(உருளைக்கிழங்கு) / (आलू)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-3" class="accessible-checkbox"><label for="bir-kb-3">2 Cups Premium Aged Basmati Rice <span class="bracket-lang">(பாஸ்மதி அரிசி) / (बासमती चावल)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-4" class="accessible-checkbox"><label for="bir-kb-4">Rose & Keora Water with Saffron <span class="bracket-lang">(ரோஸ் வாட்டர், குங்குமப்பூ) / (गुलाब जल, केसर)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-kb-5" class="accessible-checkbox"><label for="bir-kb-5">Fried Onions & Garam Masala <span class="bracket-lang">(வறுத்த வெங்காயம்) / (तली हुई प्याज)</span></label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Boil peeled potato halves in a spiced chicken broth until tender and infused with flavor. Cook the chicken separately in a rich gravy.</li>
-                            <li>Par-boil long-grain Basmati rice in hot water containing whole spices until exactly 70% cooked, then drain.</li>
-                            <li>Layer chicken gravy, spiced potatoes, and par-boiled rice in a heavy pot. Drizzle saffron milk, atar, and fried onions over the top. Seal and cook on low heat (Dum) for 20 minutes.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <article class="recipe-card" data-category="rice">
+            <h2 class="recipe-title">Tamarind Rice <br><span class="translation-title">(புளி சாதம் / इमली चावल)</span></h2>
+            <p class="recipe-description">Traditional festive Tamil Nadu temple style rice, featuring a highly flavorful tartaric acid reduction balance with peanuts and freshly ground spice mixtures.</p>
 
-            <!-- CARD 9: AMBUR STYLE CHICKEN BIRYANI -->
-            <article class="clean-recipe-card" data-category="biryani">
-                <div class="card-header-block">
-                    <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Ambur Style Chicken Biryani <span class="bracket-lang">(ஆம்பூர் சிக்கன் பிரியாணி) / (आम्बूर चिकन बिरयानी)</span></h2>
-                    <p class="card-brief">An iconic Arcot-style biryani prepared by cooking meat pieces in a smooth, vibrant red chili paste base, then combined with boiled Seeraga Samba rice.</p>
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">40 Minutes</strong>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 45 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Savory & Balanced</span>
-                    <span><strong>Grain Base:</strong> Seeraga Samba Rice</span>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">3 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Fluffy Cooled Rice (சாதம் / पके हुए चावल)</li>
+                        <li>✔️ 1 Lemon-sized ball of Tamarind (புளி கரைசல் / इमली का पल्प)</li>
+                        <li>✔️ 3 tablespoons Gingelly Oil (நல்லெண்ணெய் / तिल का तेल)</li>
+                        <li>✔️ 2 tablespoons Raw Peanuts (வேர்க்கடலை / मूंगफली)</li>
+                        <li>✔️ Roasted Powder Blend: Fenugreek, Sesame seeds, Coriander & Dried Red Chilis</li>
+                        <li>✔️ A pinch of Asafoetida & Turmeric (பெருங்காயம் மற்றும் மஞ்சள் தூள் / हींग, हल्दी)</li>
+                    </ul>
                 </div>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-ab-1" class="accessible-checkbox"><label for="bir-ab-1">500g Chicken Pieces <span class="bracket-lang">(கோழி இறைச்சி) / (चिकन)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-2" class="accessible-checkbox"><label for="bir-ab-2">2 Cups Seeraga Samba Rice <span class="bracket-lang">(சீரக சம்பா அரிசி) / (सीरागा सांबा चावल)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-3" class="accessible-checkbox"><label for="bir-ab-3">4 tbsp Kashmiri Dry Red Chili Paste <span class="bracket-lang">(மிளகாய் விழுது) / (लाल मिर्च पेस्ट)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-4" class="accessible-checkbox"><label for="bir-ab-4">Sliced Onions & Tomatoes <span class="bracket-lang">(வெங்காயம், தக்காளி) / (प्याज, टमाटर)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-ab-5" class="accessible-checkbox"><label for="bir-ab-5">Fresh Mint, Coriander & Curd <span class="bracket-lang">(புதினா, கொத்தமல்லி, தயிர்) / (पुदीना, धनिया, दही)</span></label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Sauté onions, ginger-garlic paste, and tomatoes. Stir in the red chili paste and yogurt, then cook chicken pieces inside this base to form a gravy.</li>
-                            <li>In a separate large pot, boil water and par-cook the Seeraga Samba grains until firm but pliable. Drain thoroughly.</li>
-                            <li>Incorporate the hot rice directly into the bubbling chicken gravy. Close tightly with a lid and steam on low heat settings for 15 minutes.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <hr class="section-divider">
 
-            <!-- CARD 10: HYDERABADI DUM MUTTON BIRYANI -->
-            <article class="clean-recipe-card" data-category="biryani">
-                <div class="card-header-block">
-                    <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Hyderabadi Dum Mutton Biryani <span class="bracket-lang">(ஹைதராபாத் தம் மட்டன் பிரியாணி) / (हैदराबादी दम मटन बिरयानी)</span></h2>
-                    <p class="card-brief">The classic Kacchi method where raw, enzyme-tenderized mutton is layered directly under partially boiled Basmati rice, then slow-steamed to perfection.</p>
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Dry roast fenugreek, coriander seeds, sesame, and red chilis in a pan. Grind them into a fine aromatic spice powder.
+                            <br><span class="lang-sub">(வெந்தயம், தனியா, எள் மற்றும் மிளகாயை வறுத்து பொடி செய்து கொள்ளவும். / मेथी, धनिया, तिल और लाल मिर्च को सूखा भूनकर पाउडर बना लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Heat gingelly oil. Fry mustard, peanuts, and curry leaves. Pour inside the sour tamarind water. Simmer until the oil oozes out from the sides cleanly, then stir in your ground spice powder.
+                            <br><span class="lang-sub">(எண்ணெயில் கடுகு, கடலை தாளித்து புளித்தண்ணீர் ஊற்றி, எண்ணெய் பிரியும் வரை கொதிக்கவிட்டு அரைத்த பொடியை சேர்க்கவும். / तेल में राई-मूंगफली भूनें, इमली का पानी डालें और तेल छूटने तक पकाएं। फिर तैयार पाउडर मिलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Pour this thick spicy tamarind sauce over the cooled rice and let it rest so the flavors sink deep into the core.
+                            <br><span class="lang-sub">(இந்த புளிக் காய்ச்சலை சாதத்தில் ஊற்றி நன்றாகக் கிளறி சிறிது நேரம் ஊறவிடவும். / इस इमली के गाढ़े पेस्ट को चावल में मिलाकर थोड़ी देर सेट होने के लिए रख दें।)</span>
+                        </li>
+                    </ol>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 75 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Rich, Robust & Spicy</span>
-                    <span><strong>Grain Base:</strong> Extra-Long Basmati</span>
-                </div>
+            </div>
+        </article>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-hb-1" class="accessible-checkbox"><label for="bir-hb-1">600g Raw Tender Mutton Pieces <span class="bracket-lang">(மட்டன் துண்டுகள்) / (कच्चे मटन के टुकड़े)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-2" class="accessible-checkbox"><label for="bir-hb-2">2.5 Cups Aged Basmati Rice <span class="bracket-lang">(பாஸ்மதி அரிசி) / (बासमती चावल)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-3" class="accessible-checkbox"><label for="bir-hb-3">1 tbsp Raw Papaya Paste <span class="bracket-lang">(பப்பாளி விழுது) / (कच्चे पपीते का पेस्ट)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-4" class="accessible-checkbox"><label for="bir-hb-4">Shahi Jeera, Cardamom & Mint <span class="bracket-lang">(ஷாஜிஇரா, ஏலக்காய், புதினா) / (शाही जीरा, इलायची, पुदीना)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-hb-5" class="accessible-checkbox"><label for="bir-hb-5">Crispy Fried Onions & Ghee <span class="bracket-lang">(வறுத்த வெங்காயம், நெய்) / (तली हुई प्याज, घी)</span></label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Marinate raw mutton with green papaya paste, yogurt, spices, and fried onions for 4 hours to break down protein bonds.</li>
-                            <li>Boil Basmati rice and layer it over the raw meat base in stages: first layer at 50% cooked, middle layer at 70%, and top layer at 90%.</li>
-                            <li>Seal the lid onto the heavy pot using wheat dough to create an airtight seal. Cook on high heat for 15 minutes, then reduce to a low setting for 45 minutes.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <article class="recipe-card" data-category="rice">
+            <h2 class="recipe-title">Lemon Rice <br><span class="translation-title">(எலுமிச்சை சாதம் / नींबू चावल)</span></h2>
+            <p class="recipe-description">A bright, beautiful golden yellow dish with fresh citrus juice squeezed over crunchy roasted peanuts and mild mustard temperings.</p>
 
-            <!-- CARD 11: THALASSERY CHICKEN BIRYANI -->
-            <article class="clean-recipe-card" data-category="biryani">
-                <div class="card-header-block">
-                    <span class="category-indicator type-biryani">Biryani Varieties</span>
-                    <h2 class="card-recipe-title">Thalassery Chicken Biryani <span class="bracket-lang">(தலச்சேரி சிக்கன் பிரியாணி) / (थलस्सेरी चिकन बिरयानी)</span></h2>
-                    <p class="card-brief">A legendary Malabar coast recipe using small, thin Khaima grains cooked entirely in ghee and paired with a fiery, green-chili-dominant chicken masala.</p>
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">20 Minutes</strong>
                 </div>
-                
-                <div class="quick-specs-row">
-                    <span><strong>Prep Time:</strong> 55 Mins</span>
-                    <span><strong>Flavor Profile:</strong> Warm & Highly Aromatic</span>
-                    <span><strong>Grain Base:</strong> Khaima Rice</span>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">2 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 1 Cup Cooled Steamed Rice (உதிரி சாதம் / पके हुए चावल)</li>
+                        <li>✔️ 3 tablespoons Fresh Lemon Juice (எலுமிச்சை சாறு / नींबू का रस)</li>
+                        <li>✔️ 1/2 teaspoon Turmeric Powder (மஞ்சள் தூள் / हल्दी पाउडर)</li>
+                        <li>✔️ 2 tablespoons Roasted Crispy Peanuts (வேர்க்கடலை / मूंगफली)</li>
+                        <li>✔️ 1.5 tablespoons Cooking Oil, Mustard seeds & Urad Dal</li>
+                        <li>✔️ 2 Chopped Green Chilis & Curry Leaves (பச்சை மிளகாய், கறிவேப்பிலை)</li>
+                    </ul>
                 </div>
 
-                <div class="card-details-split">
-                    <div class="details-pane items-list">
-                        <h3>Required Ingredients</h3>
-                        <ul class="clean-checklist">
-                            <li class="list-row"><input type="checkbox" id="bir-th-1" class="accessible-checkbox"><label for="bir-th-1">500g Spring Chicken Pieces <span class="bracket-lang">(கோழி இறைச்சி) / (चिकन)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-2" class="accessible-checkbox"><label for="bir-th-2">2 Cups Khaima / Jeerakasala Grains <span class="bracket-lang">(கைமா அரிசி) / (खैमा चावल)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-3" class="accessible-checkbox"><label for="bir-th-3">Mashed Green Chilis, Ginger, Garlic <span class="bracket-lang">(பச்சை மிளகாய் விழுது) / (हरी मिर्च का पेस्ट)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-4" class="accessible-checkbox"><label for="bir-th-4">Fried Cashew Nuts & Raisins <span class="bracket-lang">(முந்திரி, உலர் திராட்சை) / (काजू, किशमिश)</span></label></li>
-                            <li class="list-row"><input type="checkbox" id="bir-th-5" class="accessible-checkbox"><label for="bir-th-5">Pure Clarified Ghee & Malabar Masala <span class="bracket-lang">(நெய், பிரியாணி மசாலா) / (घी, बिरयानी मसाला)</span></label></li>
-                        </ul>
-                    </div>
-                    <div class="details-pane process-steps">
-                        <h3>Preparation Method</h3>
-                        <ol class="ordered-steps">
-                            <li>Wash and dry the short Khaima grains, then pan-toast them in warm ghee before boiling to keep them perfectly distinct.</li>
-                            <li>Sauté onions, ginger, garlic, and green chili paste. Toss in the chicken and spice blend, cooking down until it forms a thick, clinging masala layer.</li>
-                            <li>Layer the ghee-cooked rice over the thick chicken masala base, top with fried nuts and raisins, seal tightly, and steam-cook on low heat for 15 minutes.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <hr class="section-divider">
 
-        </div>
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Heat oil. Sauté mustard seeds, urad dal, peanuts, chilis, and curry leaves. Add turmeric powder to build the rich yellow color, then turn off the stove completely.
+                            <br><span class="lang-sub">(எண்ணெயில் கடுகு, பருப்பு, வேர்க்கடலை, மிளகாய், கறிவேப்பிலை மற்றும் மஞ்சள் தூள் வதக்கி அடுப்பை அணைக்கவும். / तेल में राई, उड़द दाल, मूंगफली, मिर्च, कड़ी पत्ता और हल्दी भूनें, फिर गैस पूरी तरह बंद कर दें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Let the mixture cool slightly, then stir the raw lemon juice extract into the oil. Do not boil the lemon juice, or it will turn bitter.
+                            <br><span class="lang-sub">(சூடு லேசாக ஆறியதும் எலுமிச்சை சாற்றை ஊற்றி கலக்கவும். சாற்றை கொதிக்க வைக்கக் கூடாது. / मिश्रण को हल्का ठंडा करके नींबू का रस मिलाएं। रस को कभी भी आंच पर न उबालें, वरना कड़वाहट आ जाएगी।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Pour this beautiful golden glaze over your cooked rice and toss gently until every grain changes to a brilliant yellow profile.
+                            <br><span class="lang-sub">(இந்த எலுமிச்சை கலவையை சாதத்தில் ஊற்றி உதிரியாக கிளறி பரிமாறவும். / इस सुनहरे मिश्रण को चावल पर डालें और अच्छे से मिला लें।)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- New Biryani Category (All 5 Recipes) -->
+        <article class="recipe-card" data-category="biryani">
+            <h2 class="recipe-title">Dindigul Seeraga Samba Biryani <br><span class="translation-title">(திண்டுக்கல் சீரக சம்பா பிரியாணி / डिंडिगुल सीरगा सांभा बिरयानी)</span></h2>
+            <p class="recipe-description">A legendary Tamil Nadu style biryani characterized by using short-grain, highly aromatic Seeraga Samba rice blended with a unique pepper-coriander spice matrix.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">45 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">3-4 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 2 Cups Seeraga Samba Rice (சீரக சம்பா அரிசி / सीरगा सांभा चावल)</li>
+                        <li>✔️ 500g Chicken Pieces (சிக்கன் துண்டுகள் / चिकन)</li>
+                        <li>✔️ 15 Small Shallots - Crushed (சின்ன வெங்காயம் / छोटे प्याज)</li>
+                        <li>✔️ 4 Green Chilis - Ground paste (பச்சை மிளகாய் விழுது / हरी मिर्च पेस्ट)</li>
+                        <li>✔️ 3 tbsp Sour Curd (புளித்த தயிர் / खट्टा दही)</li>
+                        <li>✔️ Handful of Fresh Mint & Coriander leaves (புதினா, கொத்தமல்லி)</li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Sauté crushed shallots and green chili paste in hot ghee and oil inside your pot until soft.
+                            <br><span class="lang-sub">(நெய் மற்றும் எண்ணெயில் சின்ன வெங்காயம் மற்றும் பச்சை மிளகாய் விழுதை வதக்கவும். / ghee और तेल में कुचले हुए छोटे प्याज और हरी मिर्च का पेस्ट भूनें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Add the chicken, mint, coriander, and curd. Cook until the meat releases its natural juices.
+                            <br><span class="lang-sub">(சிக்கன், புதினா, கொத்தமல்லி மற்றும் தயிர் சேர்த்து வதக்கவும். / चिकन, पुदीना, धनिया और दही डालकर अच्छे से पकाएं जब तक पानी न छूटने लगे।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Pour exactly 4 cups of water, add salt, and bring to a rolling boil. Add soaked Seeraga Samba rice.
+                            <br><span class="lang-sub">(4 கப் தண்ணீர் மற்றும் உப்பு சேர்த்து கொதித்ததும், ஊறவைத்த சீரக சம்பா அரிசியை சேர்க்கவும். / 4 कप पानी और नमक डालकर उबालें, फिर भीगा हुआ सीरगा सांभा चावल मिलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Close with a heavy tight lid and cook on extremely low flame for 15 minutes (Dum method).
+                            <br><span class="lang-sub">(மூடி போட்டு 15 நிமிடங்கள் குறைந்த தீயில் தம் கட்டவும். / ढक्कन बंद करके 15 मिनट के लिए धीमी आंच पर दम पर पकाएं।)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card" data-category="biryani">
+            <h2 class="recipe-title">Fine Chicken Kolkata Biryani <br><span class="translation-title">(கொல்கத்தா சிக்கன் பிரியாணி / कोलकाता चिकन बिरयानी)</span></h2>
+            <p class="recipe-description">A Royal Awadhi-inspired masterpiece known for its light, fragrant profile, juicy meat, a splash of rose water, and the iconic soft boiled potato.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">55 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">3 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 2 Cups Aged Basmati Rice (பாஸ்மதி அரிசி / बासमती चावल)</li>
+                        <li>✔️ 500g Chicken & 2 Large Peeled Potatoes (உருளைக்கிழங்கு / आलू)</li>
+                        <li>✔️ 1 Cup Crispy Fried Onions - Beresta (வறுத்த வெங்காயம் / तली हुई प्याज)</li>
+                        <li>✔️ 1/2 tsp Saffron dissolved in warm milk (குங்குமப்பூ பால் / केसर दूध)</li>
+                        <li>✔️ 2 drops Meetha Attar & Rose Water (ரோஸ் வாட்டர் / मीठा अतर और गुलाब जल)</li>
+                        <li>✔️ Kolkata Biryani Masala (Mace, Nutmeg, Cardamom powder)</li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Boil potatoes with turmeric and salt. Fry them lightly until golden and set aside.
+                            <br><span class="lang-sub">(உருளைக்கிழங்கை மஞ்சள் தூள் சேர்த்து வேகவைத்து, பின் எண்ணெயில் லேசாக வறுக்கவும். / आलू को हल्दी-नमक के साथ उबालें, फिर सुनहरा होने तक तलकर अलग रखें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Semi-cook Basmati rice separately with whole spices until it reaches exactly 70%. Drain the starch liquid.
+                            <br><span class="lang-sub">(பாஸ்மதி அரிசியை மசாலாக்களுடன் சேர்த்து 70% பதத்திற்கு வேகவைத்து வடித்துக்கொள்ளவும். / बासमती चावल को खड़े मसालों के साथ 70% तक पकाकर पानी छान लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Cook the chicken with yogurt, ginger-garlic paste, and special spice powder in a rich base layer.
+                            <br><span class="lang-sub">(சிக்கனை இஞ்சி பூண்டு, தயிர் மற்றும் பிரியாணி மசாலா சேர்த்து நன்றாக சமைக்கவும். / चिकन को दही, अदरक-लहसुन पेस्ट और विशेष मसाले के साथ अच्छे से पकाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Layer chicken and potatoes at the bottom, top with rice, saffron milk, and meetha attar. Seal and Dum for 20 minutes.
+                            <br><span class="lang-sub">(பாத்திரத்தில் சிக்கன், உருளைக்கிழங்கு, அதன் மேல் சாதம், குங்குமப்பூ பால், ரோஸ் வாட்டர் ஊற்றி மூடி தம் போடவும். / नीचे चिकन-आलू रखें, ऊपर चावल बिछाएं, केसर दूध और मीठा अतर छिड़ककर 20 मिनट दम दें।)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card" data-category="biryani">
+            <h2 class="recipe-title">Arcot Style Ambur Biryani <br><span class="translation-title">(ஆம்பூர் பிரியாணி / आम्बूर बिरयानी)</span></h2>
+            <p class="recipe-description">A famous Nawabi style recipe from the Arcot region, made using Seeraga Samba rice, where chicken is boiled in a red chili paste broth before cooking with the rice.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">50 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">4 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 2 Cups Seeraga Samba Rice (சீரக சம்பா அரிசி / सीरगा सांभा चावल)</li>
+                        <li>✔️ 500g Chicken (சிக்கன் துண்டுகள் / चिकन)</li>
+                        <li>✔️ 1 Cup Sliced Tomatoes & Onions (தக்காளி, வெங்காயம் / टमाटर, प्याज)</li>
+                        <li>✔️ 2 tbsp Soaked Kashmiri Red Chili Paste (மிளகாய் விழுது / सूखी लाल मिर्च पेस्ट)</li>
+                        <li>✔️ 1/2 Cup Thick Yogurt (கட்டித் தயிர் / गाढ़ा दही)</li>
+                        <li>✔️ Fresh mint and whole spices for tempering</li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Sauté whole spices, sliced onions, and ginger-garlic paste until golden. Add red chili paste.
+                            <br><span class="lang-sub">(வெங்காயம், இஞ்சி பூண்டு வதக்கி, அதனுடன் அரைத்த சிவப்பு மிளகாய் விழுதைச் சேர்க்கவும். / प्याज, अदरक-लहसुन भूनें और फिर पिसी हुई लाल मिर्च का पेस्ट मिलाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Add tomatoes, mint, curd, and chicken. Pour a small volume of water and simmer until chicken is fully tender.
+                            <br><span class="lang-sub">(தக்காளி, புதினா, தயிர் மற்றும் சிக்கன் சேர்த்து கறி மென்மையாகும் வரை நன்கு வேகவிடவும். / टमाटर, पुदीना, दही और चिकन डालकर मांस के गलने तक अच्छे से पकाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Add parboiled Seeraga Samba rice into this boiling meat stock matrix, adjusting salt level evenly.
+                            <br><span class="lang-sub">(அரைப்பதம் வெந்த சீரக சம்பா அரிசியை இந்த கொதிக்கும் சிக்கன் சாற்றில் சேர்க்கவும். / आधे पके सीरगा सांभा चावल को इस उबलते हुए चिकन के रस में डालें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Cover with a secure sheet, place a heavy weight object on top, and let it cook in Dum mode for 15 minutes.
+                            <br><span class="lang-sub">(பாத்திரத்தை மூடி அதன் மேல் ஒரு கனமான பொருளை வைத்து 15 நிமிடங்கள் தம் வைக்கவும். / बर्तन को ढककर ऊपर भारी वजन रखें और 15 मिनट के लिए दम पर छोड़ दें।)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card" data-category="biryani">
+            <h2 class="recipe-title">Malabar Thalassery Biryani <br><span class="translation-title">(தலச்சேரி பிரியாணி / थालास्सेरी बिरयानी)</span></h2>
+            <p class="recipe-description">A unique and fragrant cultural gem from Kerala using tiny Khaima/Jeerakasala rice grains, cooked with mild spices and decorated with fried cashews and raisins.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">50 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">3 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 2 Cups Khaima / Jeerakasala Rice (கைமா அரிசி / खैमा-जीराकासाला चावल)</li>
+                        <li>✔️ 500g Chicken Pieces (சிக்கன் / चिकन)</li>
+                        <li>✔️ 1 Cup Crispy Fried Onions (நெய் வெங்காயம் / तली हुई प्याज)</li>
+                        <li>✔️ Green chili, Ginger, Garlic crushed paste blend</li>
+                        <li>✔️ 1/2 tsp Fennel powder (பெருஞ்சீரகத் தூள் / सौंफ पाउडर)</li>
+                        <li>✔️ 15 Cashews and Raisins fried in pure ghee</li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Fry the Khaima rice in pure ghee for 2 minutes before boiling it until 80% done, then drain.
+                            <br><span class="lang-sub">(கைமா அரிசியை நெய்யில் 2 நிமிடங்கள் வறுத்து, பின் முக்கால் பதம் வேகவைத்து வடிக்கவும். / खैमा चावल को घी में 2 मिनट भूनें, फिर 80% तक उबालकर पानी छान लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Make chicken masala by cooking chicken with crushed ginger-garlic-chili paste, tomatoes, and fennel powder.
+                            <br><span class="lang-sub">(இஞ்சி, பூண்டு, மிளகாய் விழுது, தக்காளி மற்றும் சோம்பு பொடி சேர்த்து சிக்கன் மசாலா தயாரிக்கவும். / अदरक-लहसुन-मिर्च पेस्ट, टमाटर और सौंफ पाउडर के साथ चिकन मसाला तैयार करें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Layer spicy chicken gravy at the bottom and cover with the aromatic cooked Khaima rice.
+                            <br><span class="lang-sub">(கீழ் அடுக்கில் சிக்கன் மசாலாவையும், மேல் அடுக்கில் சமைத்த கைமா சாதத்தையும் பரப்பவும். / नीचे मसालेदार चिकन रखें और ऊपर सुगंधित पके हुए खैमा चावल की परत बिछाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Garnish top layer with cashews, raisins, and golden onions. Seal tightly and leave on Dum for 15 minutes.
+                            <br><span class="lang-sub">(மேலே வறுத்த முந்திரி, திராட்சை மற்றும் வெங்காயம் தூவி 15 நிமிடங்கள் தம் போடவும். / ऊपर भुने काजू, किशमिश और प्याज सजाकर 15 मिनट के लिए दम पर रख दें।)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <article class="recipe-card" data-category="biryani">
+            <h2 class="recipe-title">Hyderabad Chicken Dum Biryani <br><span class="translation-title">(ஹைதராபாத் தம் பிரியாணி / हैदराबाद चिकन दम बिरयानी)</span></h2>
+            <p class="recipe-description">The ultimate Nizami masterwork using the Kachhi Yakhni method, where raw marinated chicken is layered with parboiled Basmati rice and slow cooked.</p>
+
+            <div class="metrics-dashboard">
+                <div class="metric-node">
+                    <span class="label">Time to Make (நேரம் / समय)</span>
+                    <strong class="value">60 Minutes</strong>
+                </div>
+                <div class="metric-node">
+                    <span class="label">Servings (அளவு / मात्रा)</span>
+                    <strong class="value">4-5 People</strong>
+                </div>
+            </div>
+
+            <div class="recipe-layout">
+                <div class="recipe-section">
+                    <h3>🛒 Things You Need (தேவையான பொருட்கள் / सामग्री)</h3>
+                    <ul class="ingredient-list">
+                        <li>✔️ 2.5 Cups Premium Basmati Rice (பாஸ்மதி அரிசி / बासमती चावल)</li>
+                        <li>✔️ 600g Chicken - Bone-in pieces (சிக்கன் / चिकन)</li>
+                        <li>✔️ 1 Cup Fresh Thick Yogurt (கெட்டித் தயிர் / गाढ़ा दही)</li>
+                        <li>✔️ 1.5 tbsp Ginger-Garlic Paste (இஞ்சி பூண்டு விழுது / अदरक-लहसुन पेस्ट)</li>
+                        <li>✔️ 1 Cup Fried Crisp Brown Onions (பிரியாணி வெங்காயம் / तली हुई प्याज)</li>
+                        <li>✔️ Mint, Lemon juice, Saffron thread milk & Shahi Jeera</li>
+                    </ul>
+                </div>
+
+                <hr class="section-divider">
+
+                <div class="recipe-section">
+                    <h3>👨‍🍳 Easy Steps to Prepare (செய்முறை விளக்கம் / बनाने की विधि)</h3>
+                    <ol class="steps-list">
+                        <li>
+                            <strong>Step 1 (முதல் படி / पहला कदम):</strong> <br>
+                            Marinate raw chicken with yogurt, ginger-garlic, chili powder, lemon juice, mint, and fried onions for 2 hours.
+                            <br><span class="lang-sub">(சிக்கனை தயிர், இஞ்சி பூண்டு, மிளகாய்த்தூள், புதினா மற்றும் வெங்காயத்துடன் 2 மணிநேரம் ஊறவைக்கவும். / कच्चे चिकन को दही, अदरक-लहसुन, मिर्च, पुदीना और तली प्याज के साथ 2 घंटे मैरीनेट करें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 2 (இரண்டாம் படி / दूसरा कदम):</strong> <br>
+                            Cook Basmati rice until it hits 50% cook status for the lower layer, and 80% for top layer.
+                            <br><span class="lang-sub">(பாஸ்மதி அரிசியை கொதிக்கும் நீரில் பாதி அளவு மற்றும் முக்கால் அளவு என இரு பதங்களாக வேகவைக்கவும். / बासमती चावल को उबलते पानी में आधा और तीन-चौथाई अलग-अलग स्तर पर पका लें।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 3 (மூன்றாம் படி / तीसरा कदम):</strong> <br>
+                            Place raw marinated chicken at the bottom of a heavy vessel. Layer the rice over it sequentially based on cook percentage.
+                            <br><span class="lang-sub">(அடி பாத்திரத்தில் ஊறவைத்த பச்சைக் கறியை வைத்து, அதன் மேல் வடித்து வைத்துள்ள சாதத்தை அடுக்கவும். / भारी बर्तन के नीचे मैरीनेटेडकच्चा चिकन रखें, फिर उसके ऊपर पके हुए चावल की परतें लगाएं।)</span>
+                        </li>
+                        <li>
+                            <strong>Step 4 (நான்காம் படி / चौथा कदम):</strong> <br>
+                            Pour saffron milk, ghee, and remaining onions. Seal with dough or foil and cook on high heat for 10 mins, then low heat for 30 mins.
+                            <br><span class="lang-sub">(நெய், குங்குமப்பூ பால் ஊற்றி, பாத்திரத்தின் ஓரங்களை மாவு கொண்டு அடைத்து 40 நிமிடங்கள் தம் செய்யவும். / ऊपर घी और केसर दूध डालें। आटे से ढक्कन सील कर 10 मिनट तेज और 30 मिनट धीमी आंच पर दम दें।)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
     </main>
 
-    <footer class="portfolio-footer">
-        <div class="container">
-            <p>&copy; 2026 Dr. Prabakaran Kamalanathan. High-Accessibility Comfort Edition.</p>
-        </div>
+    <footer>
+        <p>Blessings from Dr. Prabakaran Kamalanathan's Kitchen. Stay Healthy! ❤️</p>
     </footer>
 
     <script src="script.js"></script>
